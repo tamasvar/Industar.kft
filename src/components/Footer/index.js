@@ -3,7 +3,6 @@ import { FaFacebook } from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll'
 import {
     FooterContainer,
-    FooterLink,
     FooterLinkItems,
     FooterLinkTitle,
     FooterLinksContainer,
@@ -16,9 +15,8 @@ import {
     SocialMediaWrap,
     SocialLogo,
     WebsiteRights,
-    FooterLinkItemsBig,
-    FooterC,
-    FooterRight
+    FooterLinkItemsBig
+    
 } from './FooterElements'
 const Footer = () => {
     const toggleHome=()=>{

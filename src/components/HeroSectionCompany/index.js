@@ -1,17 +1,15 @@
 import React,{useState} from 'react'
-import { Button, ButtonS } from '../ButtonElement'
-import Video from '../../videos/video.mp4'
+import { ButtonS } from '../ButtonElement'
+
 
 import { 
     HeroContainer,
     HeroBg,
-    VideoBg,
     HeroBtnWrapped,
     HeroContent,
     HeroH1,
     HeroP,
     ArrowForward,
-    ArrowRight,
     ArrowDown,
     ImageBg
  } from './HeroElements'

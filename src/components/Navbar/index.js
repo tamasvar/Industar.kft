@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons';
 import { animateScroll as scroll } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom'
+
 import { 
   Nav,
   NavbarContainer,
@@ -11,8 +11,7 @@ import {
   NavItem,
   NavMenu,
   NavLinks,
-  NavBtn,
-  NavBtnLink
+ 
  } from './NavbarElements';
 
 

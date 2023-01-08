@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+
 import { CardActionArea } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll';
@@ -11,13 +11,10 @@ import Icon2 from '../../images/elhajlitas_es_lemez_megmunkalas-1.jpg'
 import Icon3 from '../../images/elektrosztatikus_porszoras.jpg'
 import { 
   ServicesContainer,
-  ServicesCard,
   ServicesH1,
   ServicesH2,
-  ServicesIcon,
   ServicesP,
-  ServicesA,
-  ServicesWrapper,
+  ServicesWrapper
  } from './ServicesElements'
 
 

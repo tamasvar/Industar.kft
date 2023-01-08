@@ -1,18 +1,16 @@
 import React,{useState} from 'react'
-import {Button} from '../../ButtonElement'
-import { ImageViewer } from "react-image-viewer-dv"
 import { animateScroll as scroll } from 'react-scroll'
 import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
-import img1 from '../../../images/csohajlitas-1.jpg'
+/*import img1 from '../../../images/csohajlitas-1.jpg'
 import img2 from '../../../images/csohajlitas-2.jpg'
 import img3 from '../../../images/csohajlitas-3.jpg'
 import img4 from '../../../images/csohajlitas-4.jpg'
 import img5 from '../../../images/csohajlitas-5.jpg'
 import img6 from '../../../images/csohajlitas-6.jpg'
 import img7 from '../../../images/csohajlitas-7.jpg'
-import img8 from '../../../images/csohajlitas-8.jpg'
+import img8 from '../../../images/csohajlitas-8.jpg'*/
 
 import {
 InfoContainer,
@@ -24,11 +22,9 @@ TextWrapper,
 TopLine,
 Heading,
 Subtitle,
-BtnWrap,
-ImgWrap,
-Img
+
 } from './Servicesallelement'
-import { Gallery } from 'react-grid-gallery'
+
 
 export const homeObjOne={
   id:'about',

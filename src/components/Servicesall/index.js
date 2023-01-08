@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import {CsohajlitasModal} from './Modal/CsohajlitasModal';
 import { Link as RouterLink } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll';
 import Icon1 from '../../images/csohajlitas-4.jpg'
@@ -22,13 +20,10 @@ import Icon12 from '../../images/plazmavagas-4.jpg'
 
 import { 
   ServicesContainer,
-  ServicesCard,
   ServicesH1,
   ServicesH2,
-  ServicesIcon,
   ServicesP,
-  ServicesA,
-  ServicesWrapper,
+  ServicesWrapper
  } from './ServicesElements'
 
 
