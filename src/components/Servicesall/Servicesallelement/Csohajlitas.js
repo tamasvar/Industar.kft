@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import { animateScroll as scroll } from 'react-scroll'
 import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
@@ -42,9 +41,9 @@ export const homeObjOne={
 
 };
 const Csohajlitas = () => {
-   const toggleHome=()=>{
+   /*const toggleHome=()=>{
     scroll.scrollToTop();
-  }
+  }*/
   const[isOpen,setIsOpen]=useState(false)
 
   const toggle=()=>{
