@@ -10,8 +10,8 @@ export const FooterWrap =styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    max-width: 1100px;
+    text-align:center;
+    max-width: 1200px;
     margin: 0 auto;
 `
 
@@ -37,10 +37,10 @@ export const FooterLinksWrapper =styled.div`
 export const FooterLinkItems =styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align:center;
     margin: 16px;
     text-align: left;
-    width: 160px;
+    width: 180px;
     box-sizing: border-box;
     color: #fff;
 
@@ -50,10 +50,26 @@ export const FooterLinkItems =styled.div`
         width: 100%;
     }
 `
+export const FooterLinkItemsBig =styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    margin: 16px;
+    text-align: left;
+    width: 320px;
+    box-sizing: border-box;
+    color: #fff;
 
+    @media screen and (max-width: 420px){
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+`
 export const FooterLinkTitle =styled.h1`
     font-size: 14px;
     margin-bottom: 16px;
+    
 `
 
 export const FooterLink =styled(Link)`
@@ -113,4 +129,32 @@ export const SocialIcons =styled.div`
 export const SocialIconLink =styled.a`
     color: #fff;
     font-size: 24px;
+    background-color:#fff;
+`
+export const FooterA =styled.a`
+   display: flex;
+    text-align: left;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+`
+export const FooterRight =styled.a`
+   
+   position: relative;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+    
+`
+export const FooterC =styled.a`
+   
+    color: blue;
+    
+`
+export const FooterSpan =styled.span`
+   display: flex;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
 `

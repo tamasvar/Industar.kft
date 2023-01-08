@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons';
 import { animateScroll as scroll } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom'
 import { 
   Nav,
   NavbarContainer,
@@ -43,27 +44,27 @@ const Navbar = ({toggle}) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to='about'
-                smooth={true} 
-                duration={500} 
-                spy={true}
-                exact='true' 
-                offset={-80}
-                >Bemutatkozás</NavLinks>
+                <NavLinks onClick={toggleHome} to="company"
+                 
+                 exact='true' 
+                 offset={-80}
+                >Cégbemutató</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='discover'>Discover</NavLinks>
+                <NavLinks onClick={toggleHome}  to='services'>Szolgáltatások</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='services'>Services</NavLinks>
+                <NavLinks onClick={toggleHome}  to='discover'>Referenciák</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='signup'>Sign Up</NavLinks>
+                <NavLinks to='signup'>Kapcsolat</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to='signup'>Kapcsolat</NavLinks>
               </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to='signin'>Sign In</NavBtnLink>
-            </NavBtn>
+            
+            
           </NavbarContainer>
         </Nav>
         </IconContext.Provider>
