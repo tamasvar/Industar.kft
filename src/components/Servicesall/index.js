@@ -61,7 +61,7 @@ const Servicesall = () => {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },height: 350 
                           }} >
-                  <CardActionArea>
+                  <CardActionArea onClick={toggleHome} component={RouterLink} to="/services/lemezmegmunkalas">
                     <CardMedia
                       component="img"
                       height="200"
@@ -79,7 +79,7 @@ const Servicesall = () => {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },height: 350 
                           }} >
-                  <CardActionArea>
+                  <CardActionArea onClick={toggleHome} component={RouterLink} to="/services/elektrosztatikusporszoras" >
                     <CardMedia
                       component="img"
                       height="200"

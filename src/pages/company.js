@@ -3,7 +3,8 @@ import { Chrono } from "react-chrono";
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import HeroSectionCompany from '../components/HeroSectionCompany';
+import HeroSection from '../components/HeroSectionImage';
+import { company } from '../components/HeroSectionImage/data'
 
 const Company = () => {
   const[isOpen,setIsOpen]=useState(false)
@@ -89,7 +90,7 @@ const Company = () => {
     <>
      <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <HeroSectionCompany />
+      <HeroSection {...company}/>
         <div id={'timeline'} >
             <Chrono  
            
@@ -98,7 +99,7 @@ const Company = () => {
             
             mediaHeight={200}/>
         </div>
-    <Footer/>
+      <Footer/>
 
     
     </>

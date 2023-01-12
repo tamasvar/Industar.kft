@@ -1,0 +1,80 @@
+export const home={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'Industar kft',
+    heroP:'Fém megmunkálás',
+    imgStart:false,
+    to:'about',
+    video:require('../../videos/video.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+  
+  };
+  export const services={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'Industar kft',
+    heroP:'Fém megmunkálás',
+    imgStart:false,
+    to:'services',
+    video:require('../../videos/laser.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  }; 
+   export const csohajlitas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'Industar kft',
+    heroP:'Csőhajlítás',
+    imgStart:false,
+    to:'csohajlitas',
+    video:require('../../videos/csohajlitas.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const lemezmegmunkalas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'Industar kft',
+    heroP:'lemezmegmunkalas',
+    imgStart:false,
+    to:'lemezmegmunkalas',
+    video:require('../../videos/lemezmegmunkalas.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const elektrosztatikusporszoras={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'Industar kft',
+    heroP:'elektrosztatikusporszoras',
+    imgStart:false,
+    to:'elektrosztatikusporszoras',
+    video:require('../../videos/elektrosztatikusporszoras.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };

@@ -5,6 +5,9 @@ import SigninPage from './pages/signin';
 import Company from './pages/company';
 import Services from './pages/services';
 import Csohajlitas from './components/Servicesall/Servicesallelement/Csohajlitas';
+import Lemezmegmunkalas from './components/Servicesall/Servicesallelement/Lemezmegmunkalas';
+import Elektrosztatikusporszoras from './components/Servicesall/Servicesallelement/Elektrosztatikusporszoras';
+
 
 
 
@@ -17,6 +20,8 @@ function App() {
         <Route path="/company" component={Company} exact />
         <Route path="/services" component={Services} exact />
         <Route path="/services/csohajlitas" component={Csohajlitas} exact />
+        <Route path="/services/lemezmegmunkalas" component={Lemezmegmunkalas} exact />
+        <Route path="/services/elektrosztatikusporszoras" component={Elektrosztatikusporszoras} exact />
       </Switch>
     </Router>
   );

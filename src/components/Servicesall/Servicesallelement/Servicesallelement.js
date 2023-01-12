@@ -14,7 +14,7 @@ export const InfoWrapper =styled.div`
     z-index: 1;
     height: auto;
     width:100%;
-    max-width: 1600px;
+    max-width: 1300px;
     margin-right: auto;
     margin-left:auto;
     padding:24px;
@@ -55,6 +55,7 @@ export const TextWrapper=styled.div`
     
   
 `
+
 export const TopLine=styled.p`
     color: #01bf71;
     font-size: 16px;
@@ -64,6 +65,7 @@ export const TopLine=styled.p`
     margin-bottom: 16px;
     text-align:center;
     justify-content: center;
+ 
     
 `
 export const Heading =styled.h1`

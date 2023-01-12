@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
-import HeroSection from '../components/HeroSection'
+import HeroSection from '../components/HeroSectionVideo'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import Servicesall from '../components/Servicesall'
+import { services } from '../components/HeroSectionVideo/data'
 
 const Services = () => {
   const[isOpen,setIsOpen]=useState(false)
@@ -16,7 +17,7 @@ const Services = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <HeroSection/>
+      <HeroSection {...services}/>
       <Servicesall/>
       
       <Footer/>

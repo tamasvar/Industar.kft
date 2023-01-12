@@ -37,29 +37,44 @@ const Navbar = ({toggle}) => {
     <IconContext.Provider value={{color:'#fff'}}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to='/' onClick={toggleHome}>Industar.kft</NavLogo>
+            <NavLogo to='/' onClick={toggleHome}
+            exact='true' 
+            offset={-80}
+            >Industar.kft </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars/>
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks onClick={toggleHome} to="company"
+                <NavLinks onClick={toggleHome} to='/company'
                  
                  exact='true' 
                  offset={-80}
                 >Cégbemutató</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks onClick={toggleHome}  to='services'>Szolgáltatások</NavLinks>
+                <NavLinks onClick={toggleHome}  to='/services'
+                 exact='true' 
+                 offset={-80}
+                >Szolgáltatások</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks onClick={toggleHome}  to='discover'>Referenciák</NavLinks>
+                <NavLinks onClick={toggleHome}  to='/products'
+                 exact='true' 
+                 offset={-80}
+                 >Termékek</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='signup'>Kapcsolat</NavLinks>
+                <NavLinks onClick={toggleHome} to='/references'
+                 exact='true' 
+                 offset={-80}
+                 >Referenciák</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='signup'>Kapcsolat</NavLinks>
+                <NavLinks onClick={toggleHome} to='/contacts'
+                 exact='true' 
+                 offset={-80}
+                 >Kapcsolat</NavLinks>
               </NavItem>
             </NavMenu>
             

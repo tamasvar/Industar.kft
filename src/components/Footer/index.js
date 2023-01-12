@@ -48,20 +48,20 @@ const Footer = () => {
                             <FooterA href="mailto:torok@industar.hu">torok@industar.hu</FooterA>
                     </FooterLinkItems>
                     <FooterLinkItems>
-                        <FooterLinkTitle>Titkárság</FooterLinkTitle>
-                            <FooterLinkTitle>Orosz Zoltánné</FooterLinkTitle>
-                            <FooterA>Tel.: +36-46/383-888,  +36-20/252-75-91</FooterA>
-                            <FooterA>Fax: +36-46/383-475</FooterA>
-                            <FooterA href="mailto:info@industar.hu">info@industar.hu</FooterA>
-                            <FooterA href="mailto:oroszne@industar.hu">oroszne@industar.hu</FooterA>
+                    <FooterLinkTitle>Minőség- és környezetirányítási vezető</FooterLinkTitle>
+                            <FooterLinkTitle>Szabó Géza</FooterLinkTitle>
+                            <FooterA>Tel.: +36-20/589-58-96</FooterA>
+                            <FooterA href="mailto:szabo@industar.hu">szabo@industar.hu</FooterA>
+                        
                     </FooterLinkItems>
                 </FooterLinksWrapper>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle>Műszaki vezető</FooterLinkTitle>
-                            <FooterLinkTitle>Szaxon Csaba</FooterLinkTitle>
-                            <FooterA>Tel.: +36-20/958-05-64</FooterA>
-                            <FooterA href="mailto:szaxon@industar.hu">szaxon@industar.hu</FooterA>
+                    <FooterLinkTitle>Titkárság</FooterLinkTitle>
+                            <FooterLinkTitle>Orosz Zoltánné</FooterLinkTitle>
+                            <FooterA>Tel.: +36-46/383-888,  +36-20/252-75-91</FooterA>
+                            <FooterA>Fax: +36-46/383-475</FooterA>
+                            <FooterA href="mailto:oroszne@industar.hu">oroszne@industar.hu</FooterA>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>Gazdasági vezető</FooterLinkTitle>
@@ -74,10 +74,11 @@ const Footer = () => {
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle>Minőség- és környezetirányítási vezető</FooterLinkTitle>
-                            <FooterLinkTitle>Szabó Géza</FooterLinkTitle>
-                            <FooterA>Tel.: +36-20/589-58-96</FooterA>
-                            <FooterA href="mailto:szabo@industar.hu">szabo@industar.hu</FooterA>
+                    <FooterLinkTitle>Műszaki vezető</FooterLinkTitle>
+                            <FooterLinkTitle>Szaxon Csaba</FooterLinkTitle>
+                            <FooterA>Tel.: +36-20/958-05-64</FooterA>
+                            <FooterA href="mailto:szaxon@industar.hu">szaxon@industar.hu</FooterA>
+                        
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>Üzemvezető</FooterLinkTitle>
