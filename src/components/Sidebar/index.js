@@ -1,15 +1,17 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll';
 import { SidebarContainer,
   Icon ,
   CloseIcon,
-  SideBtnWrap,
   SidebarLink,
-  SidebarRoute,
   SidebarWrapped,
   SidebarMenu
 } from './SidebarElements'
 
 const Sidebar = ({isOpen,toggle}) => {
+  const toggleHome=()=>{
+    scroll.scrollToTop();
+  }
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
         <Icon onClick={toggle}>
@@ -17,22 +19,34 @@ const Sidebar = ({isOpen,toggle}) => {
         </Icon>
         <SidebarWrapped>
           <SidebarMenu>
-            <SidebarLink to="about" onClick={toggle}>
-              About
+            <SidebarLink onClick={toggleHome} to='/company'
+                 
+                 exact='true' 
+                 offset={-80}
+              >Cégbemutató
             </SidebarLink>
-            <SidebarLink to="discover" onClick={toggle}>
-              Discover
+            <SidebarLink onClick={toggleHome}  to='/services'
+                 exact='true' 
+                 offset={-80}
+                >Szolgáltatások
             </SidebarLink>
-            <SidebarLink to="services" onClick={toggle}>
-              Services
+            <SidebarLink onClick={toggleHome}  to='/products'
+                 exact='true' 
+                 offset={-80}
+                 >Termékek
             </SidebarLink>
-            <SidebarLink to="Signup" onClick={toggle}>
-              Sign Up
+            <SidebarLink onClick={toggleHome} to='/references'
+                 exact='true' 
+                 offset={-80}
+                 >Referenciák
+            </SidebarLink>
+            <SidebarLink onClick={toggleHome} to='/contacts'
+                 exact='true' 
+                 offset={-80}
+                 >Kapcsolat
             </SidebarLink>
           </SidebarMenu>
-          <SideBtnWrap>
-            <SidebarRoute to="/signin">Sign In</SidebarRoute>
-          </SideBtnWrap>
+          
         </SidebarWrapped>
     </SidebarContainer>
   )
