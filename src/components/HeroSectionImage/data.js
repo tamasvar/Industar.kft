@@ -7,7 +7,7 @@ export const company={
     heroP:'Cégbemutató',
     imgStart:false,
     to:'timeline',
-    image:require('../../images/industar-kft-front.jpg'),
+    image:"/images/industar-kft-front.jpg",
     alt:'Car',
     dark:true,
     primary:true,

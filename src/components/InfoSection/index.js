@@ -61,7 +61,7 @@ const InfoSection = () => {
              <Column2>
              
               <ImgWrap>
-              <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
+              <Img src="/images/industar-kft-front.jpg" alt={'cég'}/>
               </ImgWrap>
             </Column2> 
           </InfoRow>

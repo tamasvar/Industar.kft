@@ -2,14 +2,7 @@ import React,{useState} from 'react'
 import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
-import img1 from '../../../images/elhajlitas_es_lemez_megmunkalas-1.jpg'
-/*import img2 from '../../../images/csohajlitas-2.jpg'
-import img3 from '../../../images/csohajlitas-3.jpg'
-import img4 from '../../../images/csohajlitas-4.jpg'
-import img5 from '../../../images/csohajlitas-5.jpg'
-import img6 from '../../../images/csohajlitas-6.jpg'
-/*import img7 from '../../../images/csohajlitas-7.jpg'
-import img8 from '../../../images/csohajlitas-8.jpg'*/
+
 import HeroSection from '../../HeroSectionVideo'
 import { lemezmegmunkalas } from '../../HeroSectionVideo/data'
 import {
@@ -27,7 +20,9 @@ ImgWrap
 } from './Servicesallelement'
 
 
-const Lemezmegmunkalas = () => {
+const Lemezmegmunkalas = (
+  Icon1,
+) => {
    /*const toggleHome=()=>{
     scroll.scrollToTop();
   }*/
@@ -69,7 +64,7 @@ const Lemezmegmunkalas = () => {
           <InfoRow  imgStart={false} >
             <Column1>
               <ImgWrap>
-              <Img src={img1} />
+              <Img src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg' />
             
               </ImgWrap>
             </Column1>

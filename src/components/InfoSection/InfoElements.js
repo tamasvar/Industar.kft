@@ -19,10 +19,7 @@ export const InfoWrapper =styled.div`
     margin-left:auto;
     padding:0 24px;
     justify-content: center;
-    /* background-image: url(${require(`../../images/industar-kft-front.jpg`)});
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100%; */
+    
  
 `
 

@@ -5,18 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll';
-import Icon1 from '../../images/csohajlitas-4.jpg'
-import Icon2 from '../../images/elhajlitas_es_lemez_megmunkalas-1.jpg'
-import Icon3 from '../../images/elektrosztatikus_porszoras.jpg'
-import Icon4 from '../../images/csodarabolas-3.jpg'
-import Icon5 from '../../images/koordinata_lyukasztas-1.jpg'
-import Icon6 from '../../images/furesztarcsa_elezes-4.jpg'
-import Icon7 from '../../images/forgacsolas-4.jpg'
-import Icon8 from '../../images/lezervagas-3.jpg'
-import Icon9 from '../../images/kemiai_tisztitas.jpg'
-import Icon10 from '../../images/hegesztes.jpg'
-import Icon11 from '../../images/szemcseszoras.jpg'
-import Icon12 from '../../images/plazmavagas-4.jpg'
+
 
 import { 
   ServicesContainer,
@@ -27,7 +16,21 @@ import {
  } from './ServicesElements'
 
 
-const Servicesall = () => {
+const Servicesall = (
+  Icon1,
+  Icon2,
+  Icon3,
+  Icon4,
+  Icon5,
+  Icon6,
+  Icon7,
+  Icon8,
+  Icon9,
+  Icon10,
+  Icon11,
+  Icon12,
+
+) => {
   const toggleHome=()=>{
     scroll.scrollToTop();
   }
@@ -44,7 +47,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon1}
+                      src='/images/csohajlitas-4.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -65,7 +68,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon2}
+                      src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -83,7 +86,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon3}
+                      src='/images/elektrosztatikus_porszoras.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -105,7 +108,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon4}
+                      src='/images/csodarabolas-3.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -125,7 +128,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon5}
+                      src='/images/koordinata_lyukasztas-1.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -143,7 +146,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon6}
+                      src='/images/furesztarcsa_elezes-4.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -165,7 +168,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon7}
+                      src='/images/forgacsolas-4.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -185,7 +188,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon8}
+                      src='/images/lezervagas-3.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -203,7 +206,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon9}
+                      src='/images/kemiai_tisztitas.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -225,7 +228,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon10}
+                      src='/images/hegesztes.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -246,7 +249,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon11}
+                      src='/images/szemcseszoras.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -266,7 +269,7 @@ const Servicesall = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon12}
+                      src='/images/plazmavagas-4.jpg'
                       alt="green iguana"
                     />
                     <CardContent>

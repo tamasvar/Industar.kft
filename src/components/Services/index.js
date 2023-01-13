@@ -6,9 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll';
-import Icon1 from '../../images/csohajlitas-4.jpg'
-import Icon2 from '../../images/elhajlitas_es_lemez_megmunkalas-1.jpg'
-import Icon3 from '../../images/elektrosztatikus_porszoras.jpg'
+
 import { 
   ServicesContainer,
   ServicesH1,
@@ -18,7 +16,11 @@ import {
  } from './ServicesElements'
 
 
-const Services = () => {
+const Services = (
+  Icon1,
+  Icon2,
+  Icon3,
+) => {
   const toggleHome=()=>{
     scroll.scrollToTop();
   }
@@ -36,7 +38,7 @@ const Services = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon1}
+                      src='/images/csohajlitas-4.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -57,7 +59,7 @@ const Services = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon2}
+                      src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
@@ -75,7 +77,7 @@ const Services = () => {
                     <CardMedia
                       component="img"
                       height="200"
-                      image={Icon3}
+                      image='../../images/elektrosztatikus_porszoras.jpg'
                       alt="green iguana"
                     />
                     <CardContent>

@@ -2,15 +2,9 @@ import React,{useState} from 'react'
 import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
-import img1 from '../../../images/csohajlitas-1.jpg'
-import img2 from '../../../images/csohajlitas-2.jpg'
-//import img3 from '../../../images/csohajlitas-3.jpg'
-//import img4 from '../../../images/csohajlitas-4.jpg'
-import img5 from '../../../images/csohajlitas-5.jpg'
-import img6 from '../../../images/csohajlitas-6.jpg'
-/*import img7 from '../../../images/csohajlitas-7.jpg'
-import img8 from '../../../images/csohajlitas-8.jpg'*/
+
 import HeroSection from '../../HeroSectionVideo'
+
 import { csohajlitas } from '../../HeroSectionVideo/data'
 import {
 InfoContainer,
@@ -28,7 +22,14 @@ ImgWrap,
 } from './Servicesallelement'
 
 
-const Csohajlitas = () => {
+const Csohajlitas = (
+  Icon1,
+  Icon2,
+  Icon3,
+  Icon4, 
+  
+  
+) => {
    /*const toggleHome=()=>{
     scroll.scrollToTop();
   }*/
@@ -81,14 +82,14 @@ const Csohajlitas = () => {
           <InfoRow  imgStart={false} >
             <Column1>
               <ImgWrap>
-              <Img src={img1} />
+              <Img src='/images/csohajlitas-1.jpg' />
             
               </ImgWrap>
             </Column1>
             <Column2>
               <ImgWrap>
               
-              <Img src={img2} />
+              <Img src='/images/csohajlitas-2.jpg' />
               </ImgWrap>
             </Column2>
             
@@ -96,14 +97,14 @@ const Csohajlitas = () => {
           <InfoRow  imgStart={false} >
             <Column1>
               <ImgWrap>
-              <Img src={img5} />
+              <Img src='/images/csohajlitas-5.jpg' />
             
               </ImgWrap>
             </Column1>
             <Column2>
               <ImgWrap>
               
-              <Img src={img6} />
+              <Img src='/images/csohajlitas-6.jpg' />
               </ImgWrap>
             </Column2>
             

@@ -5,6 +5,7 @@ import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import Servicesall from '../components/Servicesall'
 import { services } from '../components/HeroSectionVideo/data'
+import { servicesall } from '../components/Servicesall/data'
 
 const Services = () => {
   const[isOpen,setIsOpen]=useState(false)
@@ -18,7 +19,7 @@ const Services = () => {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection {...services}/>
-      <Servicesall/>
+      <Servicesall {...servicesall}/>
       
       <Footer/>
     </>
