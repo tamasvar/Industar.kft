@@ -19,7 +19,10 @@ export const InfoWrapper =styled.div`
     margin-left:auto;
     padding:24px;
     justify-content: center;
-    
+    /*@media screen and (min-width:400px) {
+        height: 1000px;
+
+    }*/
  
 `
 

@@ -2,9 +2,8 @@ import React,{useState} from 'react'
 import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import HeroSection from '../../HeroSectionVideo'
-
 import { csohajlitas } from '../../HeroSectionVideo/data'
 import {
 InfoContainer,
@@ -46,7 +45,8 @@ const Csohajlitas = (
         <InfoContainer  lightBg={false} id={'csohajlitas'} >
         <Heading lightText={false}>Csőhajlítás</Heading>
         <InfoWrapper>
-         <TopLine lightText={false}>Hajlítógépeink kétfejes, jobbos, balos rendszerrel is ellátva, D8-D100-ig szénacél, rozsdamentes, alumínium minőségű csövek hajlítása alkalmasak magas minőségben.</TopLine>
+         <TopLine lightText={false}>Hajlítógépeink kétfejes, jobbos, balos rendszerrel is ellátva.
+         <br/> D8-D100-ig szénacél, rozsdamentes, alumínium minőségű csövek hajlítása alkalmasak magas minőségben.</TopLine>
          </InfoWrapper>      
         <InfoWrapper>
           <InfoRow  imgStart={false} >
@@ -55,10 +55,11 @@ const Csohajlitas = (
               <Subtitle darkText={true}>
               BLM E-TURN
               </Subtitle>
-              
-              <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/37BgoEhSJ0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="ratio ratio-16x9">
+
+              <iframe src="https://www.youtube.com/embed/37BgoEhSJ0M" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
              
-              
+              </div>
               <TextWrapper>
               BLM E-TURN hajlítógépek kétfejes, jobbos és balos rendszerrel egyaránt.
                 </TextWrapper> 
@@ -68,7 +69,12 @@ const Csohajlitas = (
              <Subtitle darkText={true}>
              Pedrazzoli Bend Master 45
               </Subtitle>
-             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zn6mLzFfOOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="ratio ratio-16x9">
+
+              <iframe src="https://www.youtube.com/embed/zn6mLzFfOOQ" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
+
+              </div>
+            
               <TextWrapper>
                 Pedrazzoli Bend Master 45 csőhajlító berendezés, automata adagoló rendszerrel ellátott.
                 </TextWrapper> 
@@ -78,9 +84,11 @@ const Csohajlitas = (
             
          
         </InfoWrapper>
+        
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1>
+            
               <ImgWrap>
               <Img src='/images/csohajlitas-1.jpg' />
             

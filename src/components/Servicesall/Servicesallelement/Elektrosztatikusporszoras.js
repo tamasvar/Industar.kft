@@ -40,9 +40,9 @@ const Elektrosztatikusporszoras = (
         <Heading lightText={false}>Elektrosztatikus porszórás</Heading>
         <InfoWrapper>
          <TopLine lightText={false}>Wágner kétoldalas szórófülke, konvejorpályával és gázos beégető kemencével.
-          - Maximális darabméret: 600 x 800 x 2500 mm
-          - Beégetési hőmérséklet: max 240 C°
-          - Pályasebesség: 0-1 m/perc
+          <br/>- Maximális darabméret: 600 x 800 x 2500 mm
+          <br/>- Beégetési hőmérséklet: max 240 C°
+          <br/>- Pályasebesség: 0-1 m/perc
           </TopLine>
          </InfoWrapper>      
         <InfoWrapper>

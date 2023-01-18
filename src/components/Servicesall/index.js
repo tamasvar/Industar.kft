@@ -41,7 +41,7 @@ const Servicesall = (
                     <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }}>
                   <CardActionArea  onClick={toggleHome} component={RouterLink} to="/services/csohajlitas" >
                     <CardMedia
@@ -53,7 +53,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Csőhajlítás</ServicesH2>
                     <ServicesP>
-                      CNC gépeken végzett 3D csőhajlítás ø8mm-ø76mm-ig ø32mm-i változó sugár is lézeres mérőgéppel ellenőrizve.
+                      {/* CNC gépeken végzett 3D csőhajlítás ø8mm-ø76mm-ig ø32mm-i változó sugár is lézeres mérőgéppel ellenőrizve. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -62,7 +62,7 @@ const Servicesall = (
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea onClick={toggleHome} component={RouterLink} to="/services/lemezmegmunkalas">
                     <CardMedia
@@ -73,14 +73,14 @@ const Servicesall = (
                     />
                     <CardContent>
                     <ServicesH2>Lemez megmunkálás</ServicesH2>
-                    <ServicesP>Élhajlítógép: 3000 mm-es 160 t-ás. Lemezollónk: 3000 mm-es 6 mm-ig.</ServicesP>
+                    <ServicesP>{/* Élhajlítógép: 3000 mm-es 160 t-ás. Lemezollónk: 3000 mm-es 6 mm-ig. */}</ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea onClick={toggleHome} component={RouterLink} to="/services/elektrosztatikusporszoras" >
                     <CardMedia
@@ -92,7 +92,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Elektrosztatikus porszórás</ServicesH2>
                     <ServicesP>
-                      Wágner kétoldalas szórófülke, konvejorpályával és gázos beégető kemencével max: darabméret 600 x 800 x 2500 mm.
+                      {/* Wágner kétoldalas szórófülke, konvejorpályával és gázos beégető kemencével max: darabméret 600 x 800 x 2500 mm. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -102,7 +102,7 @@ const Servicesall = (
                     <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }}>
                   <CardActionArea  component={RouterLink} to="/about" >
                     <CardMedia
@@ -114,7 +114,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Csődarabolás</ServicesH2>
                     <ServicesP>
-                      Csődarabolás CNC darabológépen ø8mm-ø76mm-ig 6000 mm szálból max. 3000 mm külső, belső sorjázással, kötegeléssel.
+                      {/* Csődarabolás CNC darabológépen ø8mm-ø76mm-ig 6000 mm szálból max. 3000 mm külső, belső sorjázással, kötegeléssel. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -122,7 +122,7 @@ const Servicesall = (
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea>
                     <CardMedia
@@ -133,14 +133,14 @@ const Servicesall = (
                     />
                     <CardContent>
                     <ServicesH2>Koordináta lyukasztás</ServicesH2>
-                    <ServicesP>Euromac lyukasztógépünk 1250x3000 mm-es megmunkálási felülettel rendelkezik, 30t nyomóerővel.</ServicesP>
+                    <ServicesP>{/* Euromac lyukasztógépünk 1250x3000 mm-es megmunkálási felülettel rendelkezik, 30t nyomóerővel. */}</ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea>
                     <CardMedia
@@ -152,7 +152,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Fűrésztárcsa élezés</ServicesH2>
                     <ServicesP>
-                      Új fűrésztárcsák készítése, felújítása, újra élezés, újra fogazás max: ø325 mm-ig.
+                     {/*  Új fűrésztárcsák készítése, felújítása, újra élezés, újra fogazás max: ø325 mm-ig. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -162,7 +162,7 @@ const Servicesall = (
                     <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            }, 
                           }}>
                   <CardActionArea  component={RouterLink} to="/about" >
                     <CardMedia
@@ -174,7 +174,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Forgácsolás</ServicesH2>
                     <ServicesP>
-                      Hurko VMX30 CNC megmunkáló központunk igen bonyolult megmunkálási feladatok elvégzésére is képes (3D marás).
+                     {/*  Hurko VMX30 CNC megmunkáló központunk igen bonyolult megmunkálási feladatok elvégzésére is képes (3D marás). */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -182,7 +182,7 @@ const Servicesall = (
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea>
                     <CardMedia
@@ -193,14 +193,14 @@ const Servicesall = (
                     />
                     <CardContent>
                     <ServicesH2>Lézervágás</ServicesH2>
-                    <ServicesP>Bérmunkában vállalunk nagy pontossággal lemez, cső és zártszelvény lézervágását.</ServicesP>
+                    <ServicesP>{/* Bérmunkában vállalunk nagy pontossággal lemez, cső és zártszelvény lézervágását. */}</ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea>
                     <CardMedia
@@ -212,7 +212,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Kémiai tisztítás</ServicesH2>
                     <ServicesP>
-                      Permetező rendszerű kémiai tisztító, foszfátozó berendezésünkkel maximum 800 mm hosszú alkatrész tisztítását tudjuk elvégezni.
+                     {/*  Permetező rendszerű kémiai tisztító, foszfátozó berendezésünkkel maximum 800 mm hosszú alkatrész tisztítását tudjuk elvégezni. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -222,7 +222,7 @@ const Servicesall = (
                     <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }}>
                   <CardActionArea  component={RouterLink} to="/about" >
                     <CardMedia
@@ -234,7 +234,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Hegesztés</ServicesH2>
                     <ServicesP>
-                    ABB hegesztő robotunk segítségével impulzusos és rövidzárlatos hegesztéssel (MIG és MAG) a legkülönfélébb anyagokat is meg tudjuk munkálni.
+                    {/* ABB hegesztő robotunk segítségével impulzusos és rövidzárlatos hegesztéssel (MIG és MAG) a legkülönfélébb anyagokat is meg tudjuk munkálni. */}
 
                     </ServicesP>
                     </CardContent>
@@ -243,7 +243,7 @@ const Servicesall = (
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea>
                     <CardMedia
@@ -255,7 +255,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Szemcseszórás</ServicesH2>
                     <ServicesP>
-                      Zárt rendszerű szemcseszóró berendezésünkkel a porfestésre váró fém alkatrészek felülettisztítását végezzük el.
+                      {/* Zárt rendszerű szemcseszóró berendezésünkkel a porfestésre váró fém alkatrészek felülettisztítását végezzük el. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -263,7 +263,7 @@ const Servicesall = (
                 <Card sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
-                            },height: 350 
+                            },
                           }} >
                   <CardActionArea>
                     <CardMedia
@@ -275,7 +275,7 @@ const Servicesall = (
                     <CardContent>
                     <ServicesH2>Plazmavágás</ServicesH2>
                     <ServicesP>
-                      HP260A 3D típusú plazma és lángvágógép, 3000×6000 mm-es asztallal, AJAN CNC vezérléssel.
+                     {/* HP260A 3D típusú plazma és lángvágógép, 3000×6000 mm-es asztallal, AJAN CNC vezérléssel. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
