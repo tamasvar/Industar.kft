@@ -1,16 +1,16 @@
 import React from 'react'
-import { makeStyles } from "@material-ui/core/styles";
 import { Card, CardContent, CardMedia,CardActionArea } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import { Link as RouterLink } from 'react-router-dom'
-import { animateScroll as scroll } from 'react-scroll';
+
 
 import { 
   ServicesContainer,
   ServicesH1,
   ServicesH2,
-
+  ServicesP,
   ServicesWrapper
- } from './ServicesElements'
+ } from './ProductsElements'
 
  const useStyles = makeStyles({
   card: {
@@ -45,13 +45,9 @@ import {
 });
 
 
-
-const Services = () => {
-  const toggleHome=()=>{
-    scroll.scrollToTop();
-  }
-  
- function handleClick(event) {
+const Products = () => {
+ 
+  function handleClick(event) {
   
     if (!event.target.classList.contains('blur')) {
         window.scrollTo({top:0});     
@@ -60,44 +56,52 @@ const Services = () => {
   const classes = useStyles();
   return (
     <ServicesContainer id="services">
-        <ServicesH1>Szolgáltatások</ServicesH1>
+        <ServicesH1>Termékek</ServicesH1>
         <ServicesWrapper>
                     <Card className={classes.card}>
-                  <CardActionArea  onClick={handleClick} component={RouterLink} to="/services">
+                  <CardActionArea onClick={handleClick}  component={RouterLink} to="/products" >
                     <CardMedia className={classes.image}
                       component="img"
                       height="300"
-                      src='/images/csohajlitas-4.jpg'
+                      src='/images/lada.jpg'
                       alt="green iguana"
                     />
                     <CardContent className={classes.cardContent}>
-                    <ServicesH2>Csőhajlítás</ServicesH2>
+                    <ServicesH2>Lada</ServicesH2>
+                    <ServicesP>
+                     {/*  CNC gépeken végzett 3D csőhajlítás ø8mm-ø76mm-ig ø32mm-i változó sugár is lézeres mérőgéppel ellenőrizve. */}
+
+                    </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card className={classes.card}>
-                  <CardActionArea  onClick={toggleHome} component={RouterLink} to="/services" >
+                <Card  className={classes.card}>
+                  <CardActionArea  onClick={handleClick} component={RouterLink} to="/products" >
                     <CardMedia className={classes.image}
                       component="img"
                       height="300"
-                      src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg'
+                      src='/images/Wartburg.jpg'
                       alt="green iguana"
                     />
                     <CardContent className={classes.cardContent}>
-                    <ServicesH2>Lemez megmunkálás</ServicesH2>
+                    <ServicesH2>Wartburg</ServicesH2>
+                    <ServicesP>{/*Élhajlítógép:  3000 mm-es 160 t-ás. Lemezollónk: 3000 mm-es 6 mm-ig. */}</ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card className={classes.card}>
-                  <CardActionArea onClick={toggleHome} component={RouterLink} to="/services" >
+                <Card  className={classes.card}>
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/products" >
                     <CardMedia className={classes.image}
                       component="img"
                       height="300"
-                      image='../../images/elektrosztatikus_porszoras.jpg'
+                      image='/images/trabant.jpg'
                       alt="green iguana"
                     />
                     <CardContent className={classes.cardContent}>
-                    <ServicesH2>Elektrosztatikus porszórás</ServicesH2>
+                    <ServicesH2>Trabant</ServicesH2>
+                    <ServicesP>
+                      {/* Wágner kétoldalas szórófülke, konvejorpályával és gázos beégető kemencével max: darabméret 600 x 800 x 2500 mm. */}
+                    </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
@@ -106,4 +110,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Products

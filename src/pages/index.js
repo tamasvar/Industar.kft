@@ -7,6 +7,7 @@ import Services from '../components/Services'
 import Footer from '../components/Footer'
 import { home } from '../components/HeroSectionVideo/data'
 import { services } from '../components/Services/data'
+import Products from '../components/Products'
 
 const Home = () => {
   const[isOpen,setIsOpen]=useState(false)
@@ -18,12 +19,12 @@ const Home = () => {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
+       <Navbar toggle={toggle}/> 
       <HeroSection {...home}/>
-      <InfoSection />
+       <InfoSection /> 
       <Services {...services}/>
-      
-      <Footer/>
+      <Products/>
+       <Footer/> 
     </>
   )
 }

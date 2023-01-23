@@ -3,39 +3,25 @@ import { Card, CardContent, CardMedia,CardActionArea } from "@material-ui/core";
 import { Link as RouterLink } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll';
 
-
 import { 
   ServicesContainer,
   ServicesH1,
   ServicesH2,
   ServicesP,
   ServicesWrapper
- } from './ServicesElements'
+ } from './ProductsallElements'
 
 
-const Servicesall = (
-  Icon1,
-  Icon2,
-  Icon3,
-  Icon4,
-  Icon5,
-  Icon6,
-  Icon7,
-  Icon8,
-  Icon9,
-  Icon10,
-  Icon11,
-  Icon12,
-
-) => {
+const Productsall = () => {
   const toggleHome=()=>{
     scroll.scrollToTop();
   }
   return (
-    <ServicesContainer id="services">          
-        <ServicesH1>Szolgáltatások</ServicesH1>       
+    <ServicesContainer id="productsall">          
+        <ServicesH1>Termékek</ServicesH1>       
         <ServicesWrapper>
-                    <Card sx={{
+                    <Card style={{backgroundColor: "#636464"}} 
+                    sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -44,11 +30,12 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/csohajlitas-4.jpg'
+                      max-width="300"
+                      src='/images/lada.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Csőhajlítás</ServicesH2>
+                    <ServicesH2>Lada</ServicesH2>
                     <ServicesP>
                       {/* CNC gépeken végzett 3D csőhajlítás ø8mm-ø76mm-ig ø32mm-i változó sugár is lézeres mérőgéppel ellenőrizve. */}
                     </ServicesP>
@@ -56,7 +43,8 @@ const Servicesall = (
                   </CardActionArea>
                 </Card>
                 
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -65,16 +53,17 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg'
+                      src='/images/Lada Samara.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Lemez megmunkálás</ServicesH2>
+                    <ServicesH2>Lada Samara</ServicesH2>
                     <ServicesP>{/* Élhajlítógép: 3000 mm-es 160 t-ás. Lemezollónk: 3000 mm-es 6 mm-ig. */}</ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -83,11 +72,11 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/elektrosztatikus_porszoras.jpg'
+                      src='/images/Lada Nova.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Elektrosztatikus porszórás</ServicesH2>
+                    <ServicesH2>Lada Nova</ServicesH2>
                     <ServicesP>
                       {/* Wágner kétoldalas szórófülke, konvejorpályával és gázos beégető kemencével max: darabméret 600 x 800 x 2500 mm. */}
                     </ServicesP>
@@ -96,7 +85,8 @@ const Servicesall = (
                 </Card>
             </ServicesWrapper>
             <ServicesWrapper>
-                    <Card sx={{
+                    <Card style={{backgroundColor: "#636464"}}
+                    sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -105,18 +95,19 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/csodarabolas-3.jpg'
+                      src='/images/Lada Niva.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Csődarabolás</ServicesH2>
+                    <ServicesH2>Lada Niva</ServicesH2>
                     <ServicesP>
                       {/* Csődarabolás CNC darabológépen ø8mm-ø76mm-ig 6000 mm szálból max. 3000 mm külső, belső sorjázással, kötegeléssel. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -125,16 +116,17 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/koordinata_lyukasztas-1.jpg'
+                      src='/images/Wartburg.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Koordináta lyukasztás</ServicesH2>
+                    <ServicesH2>Wartburg</ServicesH2>
                     <ServicesP>{/* Euromac lyukasztógépünk 1250x3000 mm-es megmunkálási felülettel rendelkezik, 30t nyomóerővel. */}</ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -143,11 +135,11 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/furesztarcsa_elezes-4.jpg'
+                      src='/images/trabant.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Fűrésztárcsa élezés</ServicesH2>
+                    <ServicesH2>Trabant</ServicesH2>
                     <ServicesP>
                      {/*  Új fűrésztárcsák készítése, felújítása, újra élezés, újra fogazás max: ø325 mm-ig. */}
                     </ServicesP>
@@ -156,7 +148,8 @@ const Servicesall = (
                 </Card>
             </ServicesWrapper>
             <ServicesWrapper>
-                    <Card sx={{
+                    <Card style={{backgroundColor: "#636464"}}
+                    sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             }, 
@@ -165,18 +158,19 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/forgacsolas-4.jpg'
+                      src='/images/dacia.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Forgácsolás</ServicesH2>
+                    <ServicesH2>Dacia</ServicesH2>
                     <ServicesP>
                      {/*  Hurko VMX30 CNC megmunkáló központunk igen bonyolult megmunkálási feladatok elvégzésére is képes (3D marás). */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -185,16 +179,17 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/lezervagas-3.jpg'
+                      src='/images/skoda.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Lézervágás</ServicesH2>
+                    <ServicesH2>Skoda</ServicesH2>
                     <ServicesP>{/* Bérmunkában vállalunk nagy pontossággal lemez, cső és zártszelvény lézervágását. */}</ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -203,11 +198,11 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/kemiai_tisztitas.jpg'
+                      src='/images/skoda favorit.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Kémiai tisztítás</ServicesH2>
+                    <ServicesH2>Skoda Favorit</ServicesH2>
                     <ServicesP>
                      {/*  Permetező rendszerű kémiai tisztító, foszfátozó berendezésünkkel maximum 800 mm hosszú alkatrész tisztítását tudjuk elvégezni. */}
                     </ServicesP>
@@ -216,7 +211,8 @@ const Servicesall = (
                 </Card>
             </ServicesWrapper>
             <ServicesWrapper>
-                    <Card sx={{
+                    <Card style={{backgroundColor: "#636464"}}
+                    sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -229,7 +225,7 @@ const Servicesall = (
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Hegesztés</ServicesH2>
+                    <ServicesH2>Aro</ServicesH2>
                     <ServicesP>
                     {/* ABB hegesztő robotunk segítségével impulzusos és rövidzárlatos hegesztéssel (MIG és MAG) a legkülönfélébb anyagokat is meg tudjuk munkálni. */}
 
@@ -237,7 +233,8 @@ const Servicesall = (
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -246,18 +243,19 @@ const Servicesall = (
                     <CardMedia
                       component="img"
                       height="200"
-                      src='/images/szemcseszoras.jpg'
+                      src='/images/moszkvics.jpg'
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Szemcseszórás</ServicesH2>
+                    <ServicesH2>Moszkvics</ServicesH2>
                     <ServicesP>
                       {/* Zárt rendszerű szemcseszóró berendezésünkkel a porfestésre váró fém alkatrészek felülettisztítását végezzük el. */}
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
                             ':hover': {
                               transform: "scale3d(1.05, 1.05, 1)", 
                             },
@@ -270,7 +268,73 @@ const Servicesall = (
                       alt="green iguana"
                     />
                     <CardContent>
-                    <ServicesH2>Plazmavágás</ServicesH2>
+                    <ServicesH2>Polszki Fiat</ServicesH2>
+                    <ServicesP>
+                     {/* HP260A 3D típusú plazma és lángvágógép, 3000×6000 mm-es asztallal, AJAN CNC vezérléssel. */}
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+            </ServicesWrapper>
+            <ServicesWrapper>
+                    <Card style={{backgroundColor: "#636464"}}
+                    sx={{
+                            ':hover': {
+                              transform: "scale3d(1.05, 1.05, 1)", 
+                            },
+                          }}>
+                  <CardActionArea  component={RouterLink} to="/about" >
+                    <CardMedia
+                      component="img"
+                      height="200"
+                      src='/images/hegesztes.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                    <ServicesH2>Mercedes</ServicesH2>
+                    <ServicesP>
+                    {/* ABB hegesztő robotunk segítségével impulzusos és rövidzárlatos hegesztéssel (MIG és MAG) a legkülönfélébb anyagokat is meg tudjuk munkálni. */}
+
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
+                            ':hover': {
+                              transform: "scale3d(1.05, 1.05, 1)", 
+                            },
+                          }} >
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="200"
+                      src='/images/szemcseszoras.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                    <ServicesH2>Volkswagen Golf 1</ServicesH2>
+                    <ServicesP>
+                      {/* Zárt rendszerű szemcseszóró berendezésünkkel a porfestésre váró fém alkatrészek felülettisztítását végezzük el. */}
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card style={{backgroundColor: "#636464"}}
+                sx={{
+                            ':hover': {
+                              transform: "scale3d(1.05, 1.05, 1)", 
+                            },
+                          }} >
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="200"
+                      src='/images/plazmavagas-4.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                    <ServicesH2>Zastava</ServicesH2>
                     <ServicesP>
                      {/* HP260A 3D típusú plazma és lángvágógép, 3000×6000 mm-es asztallal, AJAN CNC vezérléssel. */}
                     </ServicesP>
@@ -282,4 +346,4 @@ const Servicesall = (
   )
 }
 
-export default Servicesall
+export default Productsall

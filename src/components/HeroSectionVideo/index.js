@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { ButtonS } from '../ButtonElement'
-
+import { FaAngleDown } from 'react-icons/fa';
+import styled, { keyframes } from 'styled-components';
 import { 
     HeroContainer,
     HeroBg,
@@ -9,11 +10,23 @@ import {
     HeroContent,
     HeroH1,
     HeroP,
-    ArrowForward,
-    ArrowDown
+    
  } from './HeroElements'
 
-    
+ const arrowDown = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+`;
+
+const Arrow = styled(FaAngleDown)`
+  color: black;
+  font-size: 30px;
+  animation: ${arrowDown} 0.7s ease-in-out infinite;
+`;   
 const HeroSection = ({
     to,
     heroH1,
@@ -47,8 +60,8 @@ const HeroSection = ({
              onMouseLeave={onHover}
              primary='true'
              dark='true'
-             >
-                 {hover ? <ArrowForward/> : <ArrowDown/>}
+             ><Arrow />
+                 {/* {hover ? <ArrowForward/> : <ArrowDown/>} */}
             </ButtonS>
         </HeroBtnWrapped>
     </HeroContent>
