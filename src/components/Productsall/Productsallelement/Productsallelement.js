@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ServicesContainer=styled.div`
-    height: 2000px;
+    height: 2200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,9 +89,20 @@ export const ServicesH2=styled.h2`
 
 export const ServicesP=styled.p`
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
+    color: rgb(0, 255, 0);
+    text-shadow: 1px 1px #000;
+
 `
 export const ServicesA =styled.a`
    font-size: 1rem;
     text-align: center;
+`
+export const Img =styled.img`
+    
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    width:100%;
+    
 `

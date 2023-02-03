@@ -8,6 +8,7 @@ import Csohajlitas from './components/Servicesall/Servicesallelement/Csohajlitas
 import Lemezmegmunkalas from './components/Servicesall/Servicesallelement/Lemezmegmunkalas';
 import Elektrosztatikusporszoras from './components/Servicesall/Servicesallelement/Elektrosztatikusporszoras';
 import Products from './pages/products';
+import Lada from './components/Productsall/Productsallelement/Lada';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/services/csohajlitas" component={Csohajlitas} exact />
         <Route path="/services/lemezmegmunkalas" component={Lemezmegmunkalas} exact />
         <Route path="/services/elektrosztatikusporszoras" component={Elektrosztatikusporszoras} exact />
+        <Route path="/products/lada" component={Lada} exact />
       </Switch>
     </Router>
   );

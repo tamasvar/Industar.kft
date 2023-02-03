@@ -14,4 +14,20 @@ export const company={
     darkText:true,
   
   };
+  export const lada={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'timeline',
+    image:"/images/lada.jpg",
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+  
+  };
  
