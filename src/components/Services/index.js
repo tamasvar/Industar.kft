@@ -1,6 +1,7 @@
 import React from 'react'
-import { makeStyles } from "@material-ui/core/styles";
-import { Card, CardContent, CardMedia,CardActionArea } from "@material-ui/core";
+import { 
+  Card, CardContent, CardMedia,CardActionArea
+} from "@mui/material";
 import { Link as RouterLink } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -12,9 +13,8 @@ import {
   ServicesWrapper
  } from './ServicesElements'
 
- const useStyles = makeStyles({
-  card: {
-    margin: "1rem",
+ const cardstyle={
+  margin: "1rem",
     textAlign: "center",
     position: "relative",
     overflow: "hidden",
@@ -27,22 +27,22 @@ import {
     "&:hover $image": {
       filter: "blur(0px)"
     }
-  },
-  image: {
-    width: "100%",
-    backgroundSize: "cover",
-    filter: "blur(2px)",
-    transition: "filter 0.1s ease-in-out"
-  },
-  cardContent: {
-    position: "absolute",
+};
+const imagestyle={
+  width: "100%",
+  backgroundSize: "cover",
+  filter: "blur(2px)",
+  transition: "filter 0.1s ease-in-out"
+};
+
+const cardContent={
+  position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
     visibility: "visible",
     transition: "visibility 0.1s ease-in-out"
-  }
-});
+};
 
 
 
@@ -57,46 +57,46 @@ const Services = () => {
         window.scrollTo({top:0});     
     } 
 } 
-  const classes = useStyles();
+  
   return (
     <ServicesContainer id="services">
         <ServicesH1>Szolgáltatások</ServicesH1>
         <ServicesWrapper>
-                    <Card className={classes.card}>
+                    <Card sx={cardstyle}>
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/services">
-                    <CardMedia className={classes.image}
+                    <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
                       src='/images/csohajlitas-4.jpg'
                       alt="green iguana"
                     />
-                    <CardContent className={classes.cardContent}>
+                    <CardContent sx={cardContent}>
                     <ServicesH2>Csőhajlítás</ServicesH2>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card className={classes.card}>
+                <Card sx={cardstyle}>
                   <CardActionArea  onClick={toggleHome} component={RouterLink} to="/services" >
-                    <CardMedia className={classes.image}
+                    <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
                       src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg'
                       alt="green iguana"
                     />
-                    <CardContent className={classes.cardContent}>
+                    <CardContent sx={cardContent}>
                     <ServicesH2>Lemez megmunkálás</ServicesH2>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card className={classes.card}>
+                <Card sx={cardstyle}>
                   <CardActionArea onClick={toggleHome} component={RouterLink} to="/services" >
-                    <CardMedia className={classes.image}
+                    <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
                       image='../../images/elektrosztatikus_porszoras.jpg'
                       alt="green iguana"
                     />
-                    <CardContent className={classes.cardContent}>
+                    <CardContent sx={cardContent}>
                     <ServicesH2>Elektrosztatikus porszórás</ServicesH2>
                     </CardContent>
                   </CardActionArea>

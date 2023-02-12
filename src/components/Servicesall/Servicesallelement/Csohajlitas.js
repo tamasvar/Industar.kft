@@ -4,8 +4,7 @@ import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
 import HeroSection from '../../HeroSectionVideo'
 import { csohajlitas } from '../../HeroSectionVideo/data'
-import { makeStyles } from "@material-ui/core/styles";
-import { Modal } from "@material-ui/core";
+import { Modal } from "@mui/material";
 import styled from 'styled-components';
 import {
 InfoContainer,
@@ -21,13 +20,12 @@ Img,
 ImgWrap,
 
 } from './Servicesallelement'
-const useStyles = makeStyles({
-  style: {
-    display: "flex",
+
+const style={
+  display: "flex",
     alignItems: "center",
     justifyContent: "center",
-  },
-});
+};
 const VideoContainer = styled.div`
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -45,12 +43,19 @@ const VideoIframe = styled.iframe`
 
 const Csohajlitas = (  
 ) => {
-   /*const toggleHome=()=>{
-    scroll.scrollToTop();
-  }*/
-  const classes = useStyles();
+
   const[isOpen,setIsOpen]=useState(false)
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+  const [image, setImage] = useState(null)
+  const handleOpen = (img) => {
+    setOpen(true)
+    setImage(img)
+  };
+
+  const handleClose = () => {
+    setOpen(false)
+    setImage(null)
+  };
   const toggle=()=>{
     setIsOpen(!isOpen)
   }
@@ -103,21 +108,21 @@ const Csohajlitas = (
             
          
         </InfoWrapper>
-        
+        <Modal sx={style}  open={open} onClose={handleClose}>
+                        <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src={image} alt="Modal Image" />
+                  </Modal>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1>
               
               
-               <ImgWrap onClick={() => setOpen(true)}>
+               <ImgWrap onClick={() => handleOpen('/images/csohajlitas-1.jpg')}>
                 <Img src='/images/csohajlitas-1.jpg' />
                 </ImgWrap> 
-                <Modal className={classes.style}  open={open} onClose={() => setOpen(false)}>
-                    <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src="/images/csohajlitas-1.jpg" alt="Modal Image" />
-                    </Modal>
+              
             </Column1>
             <Column2>
-              <ImgWrap>
+              <ImgWrap onClick={() => handleOpen('/images/csohajlitas-2.jpg')}>
               
               <Img src='/images/csohajlitas-2.jpg' />
               </ImgWrap>
@@ -126,13 +131,13 @@ const Csohajlitas = (
           </InfoRow>
           <InfoRow  imgStart={false} >
             <Column1>
-              <ImgWrap>
+              <ImgWrap onClick={() => handleOpen('/images/csohajlitas-5.jpg')}>
               <Img src='/images/csohajlitas-5.jpg' />
             
               </ImgWrap>
             </Column1>
             <Column2>
-              <ImgWrap>
+              <ImgWrap onClick={() => handleOpen('/images/csohajlitas-6.jpg')}>
               
               <Img src='/images/csohajlitas-6.jpg' />
               </ImgWrap>
