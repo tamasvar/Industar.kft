@@ -23,7 +23,7 @@ export const company={
     heroP:'',
     imgStart:false,
     to:'timeline',
-    image:"/images/lada.jpg",
+    image:"/images/Termék_Lada.jpg",
     alt:'Car',
     dark:true,
     primary:true,

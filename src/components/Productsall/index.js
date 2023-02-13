@@ -63,7 +63,7 @@ const Productsall = () => {
                       component="img"
                       height="300"
                       
-                      src='/images/lada.jpg'
+                      src='/images/Termék_Lada.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -80,7 +80,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Lada Samara.jpg'
+                      src='/images/Termék_Lada Samara.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -94,7 +94,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Lada Nova.jpg'
+                      src='/images/Termék_Lada Nova.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -112,7 +112,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Lada Niva.jpg'
+                      src='/images/Termék_Lada Niva.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -128,7 +128,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Wartburg.jpg'
+                      src='/images/Termék_Wartburg.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -142,7 +142,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/trabant.jpg'
+                      src='/images/Termék_Trabant.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -160,7 +160,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/dacia.jpg'
+                      src='/images/Termék_Dacia.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -176,7 +176,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/skoda.jpg'
+                      src='/images/Termék_Skoda.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -190,7 +190,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/skoda favorit.jpg'
+                      src='/images/Termék_Skoda favorit.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -209,7 +209,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/mercedes.jpg'
+                      src='/images/Termék_Mercedes.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -226,7 +226,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Volkswagen Golf.jpg'
+                      src='/images/Termék_Volkswagen Golf.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -242,7 +242,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Zastava.jpg'
+                      src='/images/Termék_Zastava.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -260,7 +260,7 @@ const Productsall = () => {
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Aro.jpg'
+                      src='/images/Termék_Aro.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -277,7 +277,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/moszkvics.jpg'
+                      src='/images/Termék_Moszkvics.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -293,7 +293,7 @@ const Productsall = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/polski fiat.jpg'
+                      src='/images/Termék_Polski fiat.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>

@@ -106,12 +106,12 @@ const Lada = () => {
                         <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src={image} alt="Modal Image" />
                   </Modal>
                     <Card sx={cardstyle} >
-                  <CardActionArea  onClick={() => handleOpen('/images/lada/Taposó nagy.png')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Lada_Taposó nagy.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                       
-                      src='/images/lada/Taposó nagy.png'
+                      src='/images/Lada_Taposó nagy.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent} >
@@ -125,11 +125,11 @@ const Lada = () => {
                 </Card>
                 
                 <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/lada/Taposó kicsi.png')}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Lada_Taposó kicsi.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Taposó kicsi.png'
+                      src='/images/Lada_Taposó kicsi.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -140,11 +140,11 @@ const Lada = () => {
                   
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Hosszgerendás taposó.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Hosszgerendás taposó.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Hosszgerendás taposó.png'
+                      src='/images/Lada_Hosszgerendás taposó.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -159,11 +159,11 @@ const Lada = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/lada/Hosszgerenda.png')}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Lada_Hosszgerenda.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Hosszgerenda.png'
+                      src='/images/Lada_Hosszgerenda.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -175,11 +175,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Hosszgerenda toldat.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Hosszgerenda toldat.jpg')}>
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Hosszgerenda toldat.png'
+                      src='/images/Lada_Hosszgerenda toldat.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}> 
@@ -189,11 +189,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Hátsó doblemez.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Hátsó doblemez.jpg')}>
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Hátsó doblemez.png'
+                      src='/images/Lada_Hátsó doblemez.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -207,11 +207,11 @@ const Lada = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/lada/Középhűtőtartó gerenda(1200).png')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Lada_Középhűtőtartó gerenda(1200).jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Középhűtőtartó gerenda(1200).png'
+                      src='/images/Lada_Középhűtőtartó gerenda(1200).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -223,11 +223,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Középhűtőtartó gerenda(1500).png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Középhűtőtartó gerenda(1500).jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Középhűtőtartó gerenda(1500).png'
+                      src='/images/Lada_Középhűtőtartó gerenda(1500).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -237,11 +237,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Oldalsó hűtőtartó.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Oldalsó hűtőtartó.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Oldalsó hűtőtartó.png'
+                      src='/images/Lada_Oldalsó hűtőtartó.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -256,11 +256,11 @@ const Lada = () => {
             
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/lada/Oldalsó hűtőtartó összekötő.png')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Lada_Oldalsó hűtőtartó összekötő.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Oldalsó hűtőtartó összekötő.png'
+                      src='/images/Lada_Oldalsó hűtőtartó összekötő.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -273,11 +273,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Porvédő sapka.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Porvédő sapka.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Porvédő sapka.png'
+                      src='/images/Lada_Porvédő sapka.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -289,11 +289,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Pótkeréktartó.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Pótkeréktartó.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Pótkeréktartó.png'
+                      src='/images/Lada_Pótkeréktartó.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -307,11 +307,11 @@ const Lada = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/lada/Pótkeréktartó(1500).png')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Lada_Pótkeréktartó(1500).jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Pótkeréktartó(1500).png'
+                      src='/images/Lada_Pótkeréktartó(1500).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -324,11 +324,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Tanktartó.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Tanktartó.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Tanktartó.png'
+                      src='/images/Lada_Tanktartó.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -340,11 +340,11 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Elülső emelő.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Elülső emelő.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/lada/Elülső emelő.png'
+                      src='/images/Lada_Elülső emelő.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -358,12 +358,12 @@ const Lada = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/lada/Hátsó emelő.png')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Lada_Hátsó emelő.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                      
-                      src='/images/lada/Hátsó emelő.png'
+                      src='/images/Lada_Hátsó emelő.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -376,12 +376,12 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Szerelt hátsó emelőbak.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Szerelt hátsó emelőbak.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                       
-                      src='/images/lada/Szerelt hátsó emelőbak.png'
+                      src='/images/Lada_Szerelt hátsó emelőbak.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -393,12 +393,12 @@ const Lada = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/lada/Szerelt hátsó emelőbak gépi emelővel.png')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Lada_Szerelt hátsó emelőbak gépi emelővel.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                       
-                      src='/images/lada/Szerelt hátsó emelőbak gépi emelővel.png'
+                      src='/images/Lada_Szerelt hátsó emelőbak gépi emelővel.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>

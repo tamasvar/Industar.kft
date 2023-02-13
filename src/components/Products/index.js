@@ -68,7 +68,7 @@ const Products = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/lada.jpg'
+                      src='/images/Termék_Lada.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -85,7 +85,7 @@ const Products = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      src='/images/Wartburg.jpg'
+                      src='/images/Termék_Wartburg.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -99,7 +99,7 @@ const Products = () => {
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
-                      image='/images/trabant.jpg'
+                      image='/images/Termék_Trabant.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
