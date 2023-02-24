@@ -65,10 +65,10 @@ const Navbar = ({toggle}) => {
                  >Termékek</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks onClick={toggleHome} to='/references'
+                <NavLinks onClick={toggleHome} to='/certifications'
                  exact='true' 
                  offset={-80}
-                 >Referenciák</NavLinks>
+                 >Tanúsítványok</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks onClick={toggleHome} to='/contacts'

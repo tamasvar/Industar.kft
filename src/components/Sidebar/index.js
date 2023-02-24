@@ -35,10 +35,10 @@ const Sidebar = ({isOpen,toggle}) => {
                  offset={-80}
                  >Termékek
             </SidebarLink>
-            <SidebarLink onClick={toggleHome} to='/references'
+            <SidebarLink onClick={toggleHome} to='/certifications'
                  exact='true' 
                  offset={-80}
-                 >Referenciák
+                 >Tanúsítványok
             </SidebarLink>
             <SidebarLink onClick={toggleHome} to='/contacts'
                  exact='true' 

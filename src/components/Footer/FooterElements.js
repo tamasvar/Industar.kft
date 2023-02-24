@@ -20,7 +20,7 @@ export const FooterLinksContainer =styled.div`
     justify-content: center;
 
     @media screen and (max-width: 820px){
-        padding-top: 32px;
+       
     }
 
 `
@@ -39,8 +39,8 @@ export const FooterLinkItems =styled.div`
     flex-direction: column;
     text-align:center;
     margin: 16px;
-    text-align: left;
-    width: 180px;
+    text-align: center;
+    
     box-sizing: border-box;
     color: #fff;
 
@@ -56,14 +56,13 @@ export const FooterLinkItemsBig =styled.div`
     text-align:center;
     margin: 16px;
     text-align: left;
-    width: 320px;
     box-sizing: border-box;
     color: #fff;
 
     @media screen and (max-width: 420px){
         margin: 0;
         padding: 10px;
-        width: 100%;
+       
     }
 `
 export const FooterLinkTitle =styled.h1`
@@ -75,7 +74,6 @@ export const FooterLinkTitle =styled.h1`
 export const FooterLink =styled(Link)`
     color: #fff;
     text-decoration: none;
-    margin-bottom: 0.5rem;
     font-size: 14px;
 
     &:hover{
@@ -123,13 +121,13 @@ export const SocialIcons =styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 140px;
 `
 
 export const SocialIconLink =styled.a`
     color: #fff;
     font-size: 24px;
-    background-color:#fff;
+   
 `
 export const FooterA =styled.a`
    display: flex;

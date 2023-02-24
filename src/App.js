@@ -9,6 +9,8 @@ import Lemezmegmunkalas from './components/Servicesall/Servicesallelement/Lemezm
 import Elektrosztatikusporszoras from './components/Servicesall/Servicesallelement/Elektrosztatikusporszoras';
 import Products from './pages/products';
 import Lada from './components/Productsall/Productsallelement/Lada';
+import Contacts from './pages/contacts';
+import Certifications from './pages/certifications';
 
 
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/signin" component={SigninPage} exact />
         <Route path="/company" component={Company} exact />
         <Route path="/services" component={Services} exact />
+        <Route path="/contacts" component={Contacts} exact />
+        <Route path="/certifications" component={Certifications} exact />
         <Route path="/products" component={Products} exact />
         <Route path="/services/csohajlitas" component={Csohajlitas} exact />
         <Route path="/services/lemezmegmunkalas" component={Lemezmegmunkalas} exact />

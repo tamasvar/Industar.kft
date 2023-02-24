@@ -30,4 +30,20 @@ export const company={
     darkText:true,
   
   };
+  export const contacts={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'Kapcsolatok',
+    heroP:'',
+    imgStart:false,
+    to:'timeline',
+    image:"/images/industar-kft-front.jpg",
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+  
+  };
  
