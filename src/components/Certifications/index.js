@@ -15,8 +15,14 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import DownloadIcon from '@mui/icons-material/Download';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import Pdf1 from '../../pdf/eves_energetikai_szakreferensi_riport_2020.pdf'
-import Pdf2 from '../../pdf/tanusitvany-HU18218-18-ISO-9001-2015-HU.pdf'
-import Pdf3 from '../../pdf/tanusitvany-HU18218-18-ISO-14001-2015-HU.pdf'
+import Pdf2 from '../../pdf/tanusitvany_KIR_magyar_HU19794-21_2021-09-09.pdf'
+import Pdf3 from '../../pdf/tanusitvany_KIR_angol_HU19794-21_2021-09-09.pdf'
+import Pdf4 from '../../pdf/tanusitvany_MEBIR_magyar_45001_HU19794-21_2021-09-09.pdf'
+import Pdf5 from '../../pdf/tanusitvany_MEBIR_angol_45001_HU19794-21_2021-09-09.pdf'
+import Pdf6 from '../../pdf/tanusitvany_MIR_magyar_HU19794-21_2021-09-09.pdf'
+import Pdf7 from '../../pdf/tanusitvany_MIR_angol_HU19794-21_2021-09-09.pdf'
+
+
 import { 
   ServicesContainer,
   ServicesH1,
@@ -127,7 +133,7 @@ const Contacts = () => {
                           <DownloadIcon />
                         </IconButton>
                         <Typography sx={text} variant="h5" component="h2">
-                        Tanúsitvány HU18218-18 ISO 9001-2015
+                        Tanúsitvány ISO 14001:2015 HUN
                         </Typography>
                         <IconButton sx={iconButton}>
                           <PictureAsPdfIcon />
@@ -140,14 +146,65 @@ const Contacts = () => {
                         <DownloadIcon />
                       </IconButton>
                       <Typography sx={text} variant="h5" component="h2">
-                      Tanúsitvány HU18218-18 ISO 14001-2015
+                      Tanúsitvány ISO 14001:2015 ENG
                       </Typography>
                       <IconButton sx={iconButton}>
                         <PictureAsPdfIcon />
                       </IconButton>
                      
                     </Card>
-                    
+                    <Card sx={cards} onClick={() => window.open(Pdf4)}>
+                        
+                      <IconButton sx={iconButton} >
+                        <DownloadIcon />
+                      </IconButton>
+                      <Typography sx={text} variant="h5" component="h2">
+                      Tanúsitvány ISO 45001:2018 HUN
+                      </Typography>
+                      <IconButton sx={iconButton}>
+                        <PictureAsPdfIcon />
+                      </IconButton>
+                     
+                    </Card>
+                    <Card sx={cards} onClick={() => window.open(Pdf5)}>
+                        
+                      <IconButton sx={iconButton} >
+                        <DownloadIcon />
+                      </IconButton>
+                      <Typography sx={text} variant="h5" component="h2">
+                      Tanúsitvány ISO 45001:2018 ENG
+                      </Typography>
+                      <IconButton sx={iconButton}>
+                        <PictureAsPdfIcon />
+                      </IconButton>
+                     
+                    </Card>
+                    <Card sx={cards} onClick={() => window.open(Pdf6)}>
+                        
+                      <IconButton sx={iconButton} >
+                        <DownloadIcon />
+                      </IconButton>
+                      <Typography sx={text} variant="h5" component="h2">
+                      Tanúsitvány ISO 9001:2015 HUN
+                      </Typography>
+                      <IconButton sx={iconButton}>
+                        <PictureAsPdfIcon />
+                      </IconButton>
+                     
+                    </Card>
+                    <Card sx={cards} onClick={() => window.open(Pdf7)}>
+                        
+                      <IconButton sx={iconButton} >
+                        <DownloadIcon />
+                      </IconButton>
+                      <Typography sx={text} variant="h5" component="h2">
+                      Tanúsitvány ISO 9001:2015 ENG
+                      </Typography>
+                      <IconButton sx={iconButton}>
+                        <PictureAsPdfIcon />
+                      </IconButton>
+                     
+                    </Card>
             
             </ServicesWrapper>
            

@@ -39,19 +39,19 @@ const InfoSection = () => {
     <>
     
       <InfoContainer  lightBg={false} id={'about'} >
-        <Heading lightText={false}>Cég bemutató</Heading>
+        <Heading lightText={false}>Cégismertető</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1>
             <TextWrapper> 
              <TopLine></TopLine>
               <Subtitle darkText={true}>
-              Az Industar Kft. széleskörű szolgáltatásokat nyújt, beleértve a tervezést, a prototípusgyártást, az egyedi és sorozatgyártást, valamint a javítás és karbantartás szolgáltatásait. A cég fő profilja a szerszámgép alkatrészek, ipari berendezések, speciális alkatrészek és öntvények gyártása, amelyeket a legmagasabb minőségi sztenderdeknek megfelelően készítenek.
-              <br/>
-              Az Industar Kft. csapata magasan képzett szakemberekből áll, akik kiváló szaktudással és tapasztalattal rendelkeznek a fém megmunkálási folyamatokban. Az Industar Kft. célja, hogy magas minőségű fémalkatrészeket készítsen, amelyek megfelelnek az ügyfelek specifikációinak és követelményeinek.
-
-              Az Industar Kft. modern gépparkkal és szakértői csapattal rendelkezik, amelyek lehetővé teszik a legösszetettebb projektek végrehajtását is. A vállalat folyamatosan fejleszti a technológiáit és az eljárásait, hogy biztosítsa az ügyfelei számára a legmagasabb minőséget és hatékonyságot.
-
+              Az Industar Kft. széleskörű szolgáltatásokat nyújt, beleértve a tervezést, a prototípusgyártást, az egyedi és sorozatgyártást. A cég fő profilja a fémmegmunkálás a következőket tartalamzza: csőhajlítás, darabolás, lézervágás, plazmavágás, forgácsolás, élhajlítás, szerszámgép alkatrészek, speciális alkatrészek amelyeket a legmagasabb minőségi sztenderdeknek megfelelően készítenek.
+              
+              A csapat magasan képzett szakemberekből áll, akik kiváló szaktudással és tapasztalattal rendelkeznek a fém megmunkálási folyamatokban. A cél, hogy magas minőségű fémalkatrészeket készítsen, amelyek megfelelnek az ügyfelek specifikációinak és követelményeinek.
+             
+              A cég modern gépparkkal rendelkezik, amelyek lehetővé teszik a legösszetettebb projektek végrehajtását is. A vállalat folyamatosan fejleszti a technológiáit és az eljárásait.
+             
               Az Industar Kft. ügyfélorientált vállalkozás, és a törekvése, hogy megfeleljen az ügyfelek elvárásainak, valamint hogy biztosítsa a magas minőséget és hatékonyságot. Ha Önnek fém megmunkálásra van szüksége, akkor az Industar Kft. kiváló választás lehet Önnek.
               </Subtitle>
               <BtnWrap>

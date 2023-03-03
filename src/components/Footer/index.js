@@ -7,7 +7,6 @@ import { animateScroll as scroll } from 'react-scroll'
 import {
     FooterContainer,
     FooterLinkItems,
-    FooterLinkTitle,
     FooterLinksContainer,
     FooterLinksWrapper,
     FooterWrap,
@@ -45,7 +44,7 @@ const Footer = () => {
                             
                     </FooterLinkItems>
                     <FooterLinkItems>
-                        <FooterLink to='/references' onClick={toggleHome}>Referenciák</FooterLink>   
+                        <FooterLink to='/references' onClick={toggleHome}>Tanusítványok</FooterLink>   
                     </FooterLinkItems>
                     <FooterLinkItems>
                     <FooterLink to='/contacts' onClick={toggleHome}>Kapcsolat</FooterLink>
