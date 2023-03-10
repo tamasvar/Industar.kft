@@ -11,6 +11,8 @@ import {
   ServicesH1,
   ServicesH2,
   ServicesP,
+  TextWrapper,
+  TopLine,
   ServicesWrapper
  } from './ProductsElements'
 
@@ -62,6 +64,11 @@ const Products = () => {
   return (
     <ServicesContainer id="services">
         <ServicesH1>Termékek</ServicesH1>
+        <TextWrapper>
+         <TopLine>
+          Termékeink karroszéria a retró autokhoz kipufogók, burkolati elemek amik gyári utángyártott és kérésre a listában nem szereplő elemeket is elkészítjük.
+         </TopLine>
+         </TextWrapper> 
         <ServicesWrapper>
                     <Card  sx={cardstyle}>
                   <CardActionArea onClick={handleClick}  component={RouterLink} to="/products" >

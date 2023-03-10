@@ -9,7 +9,8 @@ import {
   ServicesContainer,
   ServicesH1,
   ServicesH2,
-
+  TextWrapper,
+  TopLine,
   ServicesWrapper
  } from './ServicesElements'
 
@@ -61,6 +62,12 @@ const Services = () => {
   return (
     <ServicesContainer id="services">
         <ServicesH1>Szolgáltatások</ServicesH1>
+        <TextWrapper>
+         <TopLine>
+          Számos fémmegmunkálás szolgáltatás nyújtunk ezeket képekkel és videókkal meg tudod nézni.
+         </TopLine>
+         </TextWrapper>      
+       
         <ServicesWrapper>
                     <Card sx={cardstyle}>
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/services">
@@ -93,7 +100,7 @@ const Services = () => {
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
-                      image='../../images/elektrosztatikus_porszoras.jpg'
+                      image='/images/elektrosztatikus_porszoras.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>

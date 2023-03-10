@@ -34,6 +34,25 @@ export const ServicesWrapper=styled.div`
 
 `
 
+export const TextWrapper=styled.div`
+    max-width: 540px;
+    padding-top: 0;
+    
+  
+`
+
+export const TopLine=styled.p`
+    color: #01bf71;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 16px;
+    text-align:center;
+    justify-content: center;
+ 
+    
+`
 export const ServicesCard=styled.div`
     background: #fff;
     display: flex;

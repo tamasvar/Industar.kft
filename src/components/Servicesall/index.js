@@ -60,7 +60,7 @@ const Servicesall = () => {
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/services/csohajlitas" >
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/csohajlitas-4.jpg'
                       alt="green iguana"
                     />
@@ -77,7 +77,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/services/lemezmegmunkalas">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg'
                       alt="green iguana"
                     />
@@ -91,7 +91,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/services/elektrosztatikusporszoras" >
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/elektrosztatikus_porszoras.jpg'
                       alt="green iguana"
                     />
@@ -109,7 +109,7 @@ const Servicesall = () => {
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/about" >
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/csodarabolas-3.jpg'
                       alt="green iguana"
                     />
@@ -125,7 +125,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/koordinata_lyukasztas-1.jpg'
                       alt="green iguana"
                     />
@@ -139,7 +139,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/furesztarcsa_elezes-4.jpg'
                       alt="green iguana"
                     />
@@ -157,7 +157,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/about" >
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/forgacsolas-4.jpg'
                       alt="green iguana"
                     />
@@ -173,7 +173,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/lezervagas-3.jpg'
                       alt="green iguana"
                     />
@@ -187,7 +187,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/kemiai_tisztitas.jpg'
                       alt="green iguana"
                     />
@@ -205,7 +205,7 @@ const Servicesall = () => {
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/about" >
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/hegesztes.jpg'
                       alt="green iguana"
                     />
@@ -222,7 +222,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/szemcseszoras.jpg'
                       alt="green iguana"
                     />
@@ -238,7 +238,7 @@ const Servicesall = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="200"
+                      height="300"
                       src='/images/plazmavagas-4.jpg'
                       alt="green iguana"
                     />

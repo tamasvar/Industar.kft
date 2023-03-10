@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { 
   Card,
   CardHeader,
@@ -22,6 +22,7 @@ import {
   MapIframe,
   MapContainer
  } from './ContactsElements'
+
 
 
  
@@ -59,6 +60,15 @@ const cardstyle={
   
   
 };
+const icon={
+  transition: 'transform 0.5s ease-in-out',
+
+};
+const animated={
+  transform: 'rotate(15deg)',
+
+};
+
 const cardContent={
   position: "absolute",
     top: "50%",
@@ -77,10 +87,25 @@ const header={
     
   }
 }
+const initialEmailTransform = 'translateY(0)';
+const animatedEmailTransform = 'translateY(-3px)';
+
+const initialTransform = 'rotate(-10deg)';
+const animatedTransform = 'rotate(10deg)';
+const transition = 'transform 0.5s ease-in-out';
 
 const Certifications = () => {
  
+  const [isAnimated, setIsAnimated] = useState(false);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsAnimated((prevIsAnimated) => !prevIsAnimated);
+    }, 1000);
 
+    return () => clearInterval(intervalId);
+  }, []);
+  const transformStyleP = isAnimated ? animatedTransform : initialTransform;
+  const transformStyleE = isAnimated ? animatedEmailTransform : initialEmailTransform;
   return (
     <ServicesContainer id="services">
         <ServicesH1>Telephelyünk és elérhetőségeink</ServicesH1>
@@ -101,13 +126,19 @@ const Certifications = () => {
                       <CardContent>
                       <ServicesP>
                         <IconButton href="mailto:torok@industar.hu">
-                          <EmailIcon />
+                          <EmailIcon sx={{
+                                transform: transformStyleE,
+                                transition: transition,
+                              }}/>
                         </IconButton>
                         <span>torok@industar.hu</span>
                       </ServicesP>
                         <ServicesP>
-                          <IconButton>
-                            <PhoneAndroidIcon />
+                          <IconButton  href='tel:+36209455795'>
+                            <PhoneAndroidIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-20/9455-795</span>
                         </ServicesP>
@@ -132,13 +163,19 @@ const Certifications = () => {
                       <CardContent>
                       <ServicesP>
                         <IconButton href="mailto:oroszne@industar.hu">
-                          <EmailIcon />
+                          <EmailIcon sx={{
+                                transform: transformStyleE,
+                                transition: transition,
+                              }}/>
                         </IconButton>
                         <span>oroszne@industar.hu</span>
                       </ServicesP>
                         <ServicesP>
-                          <IconButton>
-                            <PhoneAndroidIcon />
+                          <IconButton href='tel:+36202527591'>
+                            <PhoneAndroidIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-20/252-75-91</span>
                         </ServicesP>
@@ -164,14 +201,20 @@ const Certifications = () => {
                       />
                       <CardContent>
                       <ServicesP>
-                        <IconButton href="szabo@industar.hu">
-                          <EmailIcon />
+                        <IconButton href="mailto:szabo@industar.hu">
+                          <EmailIcon sx={{
+                                transform: transformStyleE,
+                                transition: transition,
+                              }}/>
                         </IconButton>
                         <span>szabo@industar.hu</span>
                       </ServicesP>
                         <ServicesP>
-                          <IconButton>
-                            <PhoneAndroidIcon />
+                          <IconButton href='tel:+36209455795'>
+                            <PhoneAndroidIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-20/9455-795</span>
                         </ServicesP>
@@ -182,10 +225,7 @@ const Certifications = () => {
                       </ServicesP>
                       </CardContent>
                   </Card>
-                  
-                  
-            
-            
+
                     <Card sx={cardstyle}>
                       <CardHeader
                       sx={{ textAlign: "center" }}
@@ -195,19 +235,28 @@ const Certifications = () => {
                       <CardContent>
                       <ServicesP>
                         <IconButton href="mailto:konyveles@industar.hu">
-                          <EmailIcon />
+                          <EmailIcon sx={{
+                                transform: transformStyleE,
+                                transition: transition,
+                              }}/>
                         </IconButton>
                         <span>konyveles@industar.hu</span>
                       </ServicesP>
                         <ServicesP>
-                          <IconButton>
-                            <PhoneIcon />
+                          <IconButton href='tel:+3646383422'>
+                            <PhoneIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-46/383-422</span>
                         </ServicesP>
                         <ServicesP>
-                          <IconButton>  
-                            <PhoneIcon />
+                          <IconButton href='tel:+3646383475'>  
+                            <PhoneIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-46/383-475</span>
                         </ServicesP>
@@ -226,13 +275,19 @@ const Certifications = () => {
                       <CardContent>
                       <ServicesP>
                         <IconButton href="mailto:szaxon@industar.hu">
-                          <EmailIcon />
+                          <EmailIcon sx={{
+                                transform: transformStyleE,
+                                transition: transition,
+                              }}/>
                         </IconButton>
                         <span>szaxon@industar.hu</span>
                       </ServicesP>
                         <ServicesP>
-                          <IconButton>
-                            <PhoneAndroidIcon />
+                          <IconButton href='tel:+36209580564'>
+                            <PhoneAndroidIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-20/958-05-64</span>
                         </ServicesP>
@@ -252,13 +307,19 @@ const Certifications = () => {
                       <CardContent>
                       <ServicesP>
                         <IconButton href="kismarton@industar.hu">
-                          <EmailIcon />
+                          <EmailIcon sx={{
+                                transform: transformStyleE,
+                                transition: transition,
+                              }}/>
                         </IconButton>
                         <span>kismarton@industar.hu</span>
                       </ServicesP>
                         <ServicesP>
-                          <IconButton>
-                            <PhoneAndroidIcon />
+                          <IconButton href='tel:+36209255351'>
+                            <PhoneAndroidIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-20/925-53-51</span>
                         </ServicesP>
@@ -282,13 +343,19 @@ const Certifications = () => {
                       <CardContent>
                       <ServicesP>
                         <IconButton href="istvan.torma@industar.hu">
-                          <EmailIcon />
+                          <EmailIcon sx={{
+                                transform: transformStyleE,
+                                transition: transition,
+                              }}/>
                         </IconButton>
                         <span>istvan.torma@industar.hu</span>
                       </ServicesP>
                         <ServicesP>
-                          <IconButton>
-                            <PhoneAndroidIcon />
+                          <IconButton href='tel:+36209334213'>
+                            <PhoneAndroidIcon sx={{
+                                transform: transformStyleP,
+                                transition: transition,
+                              }}/>
                           </IconButton>
                           <span>+36-20/933-42-13</span>
                         </ServicesP>

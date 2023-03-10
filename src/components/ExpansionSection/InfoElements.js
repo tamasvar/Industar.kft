@@ -4,14 +4,13 @@ export const InfoContainer=styled.div`
     color: #fff;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+17,666666+25,474747+56,474747+56,2b2b2b+76,1c1c1c+91,111111+100,131313+100 */
 background: #4c4c4c; /* Old browsers */
-background: -moz-linear-gradient(45deg,  #4c4c4c 0%, #595959 17%, #666666 25%, #474747 56%, #474747 56%, #2b2b2b 76%, #1c1c1c 91%, #111111 100%, #131313 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg,  #4c4c4c 0%,#595959 17%,#666666 25%,#474747 56%,#474747 56%,#2b2b2b 76%,#1c1c1c 91%,#111111 100%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg,  #4c4c4c 0%,#595959 17%,#666666 25%,#474747 56%,#474747 56%,#2b2b2b 76%,#1c1c1c 91%,#111111 100%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: -moz-linear-gradient(left,  #4c4c4c 0%, #595959 17%, #666666 25%, #474747 56%, #474747 56%, #2b2b2b 76%, #1c1c1c 91%, #111111 100%, #131313 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #4c4c4c 0%,#595959 17%,#666666 25%,#474747 56%,#474747 56%,#2b2b2b 76%,#1c1c1c 91%,#111111 100%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #4c4c4c 0%,#595959 17%,#666666 25%,#474747 56%,#474747 56%,#2b2b2b 76%,#1c1c1c 91%,#111111 100%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 */
 
 
 
-    
     @media screen and (max-width:768px) {
         padding: 100px 0;
 
@@ -22,7 +21,7 @@ export const InfoWrapper =styled.div`
     z-index: 1;
     height: auto;
     width:100%;
-    max-width: 1600px;
+    max-width: 1220px;
     margin-right: auto;
     margin-left:auto;
     padding:0 24px;
@@ -105,7 +104,8 @@ export const ImgWrap=styled.div`
     height: 100%;
 `
 export const Img =styled.img`
-    
+    display: block;
+    align-items: center;
     margin: 0 0 10px 0;
     padding-right: 0;
     width:100%;

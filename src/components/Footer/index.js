@@ -32,6 +32,10 @@ const Footer = () => {
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
+                    <FooterLink to='/privacypolicy' onClick={toggleHome}> Adatvédelmi nyilatkozat</FooterLink>
+                            
+                    </FooterLinkItems>
+                    <FooterLinkItems>
                     <FooterLink to='/company' onClick={toggleHome}>Cégbemutató</FooterLink>
                             
                     </FooterLinkItems>
@@ -50,6 +54,7 @@ const Footer = () => {
                     <FooterLink to='/contacts' onClick={toggleHome}>Kapcsolat</FooterLink>
                             
                     </FooterLinkItems>
+                    
                 </FooterLinksWrapper>
                 
             </FooterLinksContainer>

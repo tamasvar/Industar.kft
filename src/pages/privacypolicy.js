@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollToTop from '../components/ScrollToTop'
 
-const SigninPage = () => {
+const PrivacyPolicy = () => {
   return (
     <>
         <ScrollToTop/>
@@ -9,4 +9,4 @@ const SigninPage = () => {
   )
 }
 
-export default SigninPage
+export default PrivacyPolicy

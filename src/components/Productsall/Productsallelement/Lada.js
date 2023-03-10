@@ -50,11 +50,14 @@ const cardContent={
 const formLabel={
     fontSize: "20",
     textAlign: "center",
+    textTransform: 'none',
+    
 };
 const formControl={
     backgroundColor: "#4caf50",
     display: "flex",
     alignItems: "center",
+    fontFamily: 'Arial'
 };
 const style={
   display: "flex",
@@ -88,19 +91,21 @@ const Lada = () => {
     <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
         <HeroSection {...lada}/>
-          <FormControl sx={formControl} >
-          <InputLabel  id="select-label"  sx={formLabel} >Válaszd ki az alkatrészt</InputLabel>
+        <FormControl sx={formControl} >
+          <InputLabel  id="select-label"  sx={formLabel} ></InputLabel>
           <Select 
             labelId="select-label"
             value={selectedId}
+            sx={{color: 'red', fontSize: '20px',fontWeight: 'bold'}}
             onChange={(event) => setSelectedId(event.target.value)}
           >
-            <MenuItem value="lada">Lada általános</MenuItem>
+            <MenuItem  value="lada">Lada általános</MenuItem>
             <MenuItem value="lada1">Lada niva</MenuItem>
           </Select>
-        </FormControl>
+        </FormControl>  
         {selectedId === "lada" &&<ServicesContainer id="lada" >          
-        <ServicesH1>Karosszéria elemek</ServicesH1>       
+        <ServicesH1>Karosszéria elemek</ServicesH1> 
+              
         <ServicesWrapper>
                   <Modal sx={style}  open={open} onClose={handleClose}>
                         <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src={image} alt="Modal Image" />
