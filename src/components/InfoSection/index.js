@@ -1,6 +1,7 @@
 import React from 'react'
 import {Button} from '../ButtonElement'
 import { animateScroll as scroll } from 'react-scroll';
+//import Particles from '../Particles/particles'
 import {
 InfoContainer,
 InfoWrapper,
@@ -39,6 +40,7 @@ const InfoSection = () => {
     <>
     
       <InfoContainer  lightBg={false} id={'about'} >
+       
         <Heading lightText={false}>Cégismertető</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >

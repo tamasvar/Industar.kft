@@ -44,6 +44,12 @@ export const homeObjOne={
 const text= {
   textAlign: "center",
   flex: "1",
+  '@media (max-width: 370px)': {
+    
+    fontSize: "15px",
+   
+    
+  }
 };
 const iconButton= {
   padding: "0.5rem",
@@ -70,7 +76,14 @@ const cards={
     width:"auto",
    
     
-  }
+  },'@media (max-width: 370px)': {
+    
+    padding: "0.5rem",
+    margin: "0.5rem",
+   
+    
+  },
+  
  
 };
 const InfoSection = () => {

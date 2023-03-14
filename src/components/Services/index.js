@@ -19,13 +19,14 @@ import {
     textAlign: "center",
     position: "relative",
     overflow: "hidden",
+    
     "&:hover": {
       transform: "scale3d(1.05, 1.05, 1)", 
     },
-    "&:hover $cardContent": {
+    "&:hover .card-content": {
       visibility: "hidden"
     },
-    "&:hover $image": {
+    "&:hover .card-image": {
       filter: "blur(0px)"
     }
 };

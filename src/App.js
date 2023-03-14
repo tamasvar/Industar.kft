@@ -19,6 +19,7 @@ function App() {
   return (
     <Router>
       <Switch>
+      
         <Route path="/" component={Home} exact />
         <Route path="/privacypolicy" component={PrivacyPolicy} exact />
         <Route path="/company" component={Company} exact />
