@@ -106,7 +106,7 @@ const Servicesall = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={handleClick} component={RouterLink} to="/about" >
+                  <CardActionArea  onClick={handleClick} component={RouterLink} to="/services/csodarabolas" >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
@@ -122,7 +122,7 @@ const Servicesall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/koordinatalyukasztas">
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"

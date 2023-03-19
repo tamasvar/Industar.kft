@@ -46,6 +46,22 @@ export const home={
     darkText:true,
    
   };
+  export const csodarabolas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'csohajlitas',
+    video:require('../../video/2 - Csődarabolás_1.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
   export const lemezmegmunkalas={
     id:'about',
     lightBg:false,
