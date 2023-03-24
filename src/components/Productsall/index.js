@@ -56,8 +56,9 @@ const Productsall = () => {
   return (
     <ServicesContainer id="productsall">          
         <ServicesH1>Termékek</ServicesH1>       
-        <ServicesWrapper>
-                    <Card sx={cardstyle}>
+        
+            <ServicesWrapper>
+                 <Card sx={cardstyle}>
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/products/lada" >
                     <CardMedia  sx={imagestyle}
                       component="img"
@@ -73,56 +74,7 @@ const Productsall = () => {
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
-                </Card>
-                
-                <Card sx={cardstyle}>
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/lemezmegmunkalas">
-                    <CardMedia  sx={imagestyle}
-                      component="img"
-                      height="300"
-                      src='/images/Termék_Lada Samara.jpg'
-                      alt="green iguana"
-                    />
-                    <CardContent sx={cardContent}>
-                    <ServicesH2>Lada Samara</ServicesH2>
-                    <ServicesP>{/* Élhajlítógép: 3000 mm-es 160 t-ás. Lemezollónk: 3000 mm-es 6 mm-ig. */}</ServicesP>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-                <Card sx={cardstyle} >
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/elektrosztatikusporszoras" >
-                    <CardMedia  sx={imagestyle}
-                      component="img"
-                      height="300"
-                      src='/images/Termék_Lada Nova.jpg'
-                      alt="green iguana"
-                    />
-                    <CardContent sx={cardContent}>
-                    <ServicesH2>Lada Nova</ServicesH2>
-                    <ServicesP>
-                      {/* Wágner kétoldalas szórófülke, konvejorpályával és gázos beégető kemencével max: darabméret 600 x 800 x 2500 mm. */}
-                    </ServicesP>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-            </ServicesWrapper>
-            <ServicesWrapper>
-                    <Card sx={cardstyle}>
-                  <CardActionArea  component={RouterLink} to="/about" >
-                    <CardMedia  sx={imagestyle}
-                      component="img"
-                      height="300"
-                      src='/images/Termék_Lada Niva.jpg'
-                      alt="green iguana"
-                    />
-                    <CardContent sx={cardContent}>
-                    <ServicesH2>Lada Niva</ServicesH2>
-                    <ServicesP>
-                      {/* Csődarabolás CNC darabológépen ø8mm-ø76mm-ig 6000 mm szálból max. 3000 mm külső, belső sorjázással, kötegeléssel. */}
-                    </ServicesP>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                </Card>   
                 <Card sx={cardstyle} >
                   <CardActionArea>
                     <CardMedia  sx={imagestyle}

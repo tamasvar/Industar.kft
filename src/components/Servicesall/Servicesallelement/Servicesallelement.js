@@ -27,10 +27,10 @@ export const InfoWrapper =styled.div`
 `
 
 export const InfoRow=styled.div`
-    display:grid;
+   display:grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    
+  
     grid-template-areas: ${({imgStart})=>(imgStart? `'col2 col1'`:`'col1 col2'`)};  
     
     @media screen and (max-width:768px) {
@@ -55,7 +55,9 @@ export const Column2 = styled.div`
 export const TextWrapper=styled.div`
     max-width: 540px;
     padding-top: 0;
-    
+    @media screen and (min-width:1200px) {
+        max-width: 1250px;
+    }
   
 `
 
@@ -113,11 +115,34 @@ export const BtnWrap=styled.div`
 export const ImgWrap=styled.div`
     max-width: 555px;
     height: 100%;
+&:hover{
+        transform: scale3d(1.05, 1.05, 1);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    } 
+
 `
 export const Img =styled.img`
     
     margin: 0 0 10px 0;
     padding-right: 0;
     width:100%;
-    
+      
+`
+export const VideoContainer = styled.div`
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  
+`
+
+export const VideoIframe = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+   
 `

@@ -136,7 +136,7 @@ const Servicesall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/furesztarcsaelezes">
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
@@ -154,7 +154,7 @@ const Servicesall = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/about" >
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/forgacsolas" >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
@@ -170,7 +170,7 @@ const Servicesall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/lezervagas">
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
@@ -184,7 +184,7 @@ const Servicesall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/kemiaitisztitas">
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
@@ -202,7 +202,7 @@ const Servicesall = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={handleClick} component={RouterLink} to="/about" >
+                  <CardActionArea  onClick={handleClick} component={RouterLink} to="/services/hegesztes" >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
@@ -219,7 +219,7 @@ const Servicesall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/szemcseszoras">
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"
@@ -235,7 +235,7 @@ const Servicesall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={handleClick} component={RouterLink} to="/about">
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/services/plazmavagas">
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="300"

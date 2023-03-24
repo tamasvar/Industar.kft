@@ -3,7 +3,7 @@ import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
 import HeroSection from '../../HeroSectionVideo'
-import { csohajlitas } from '../../HeroSectionVideo/data'
+import { csohajlitas, lezervagas } from '../../HeroSectionVideo/data'
 import { Modal } from "@mui/material";
 import styled from 'styled-components';
 import {
@@ -41,7 +41,7 @@ const VideoIframe = styled.iframe`
   height: 100%;
 `;
 
-const Csohajlitas = (  
+const Lezervagas = (  
 ) => {
 
   const[isOpen,setIsOpen]=useState(false)
@@ -63,45 +63,80 @@ const Csohajlitas = (
     <>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <HeroSection {...csohajlitas}/>
-        <InfoContainer  lightBg={false} id={'csohajlitas'} >
-        <Heading lightText={false}>Csőhajlítás</Heading>
+        <HeroSection {...lezervagas}/>
+        <InfoContainer  lightBg={false} id={'lezervagas'} >
+        <Heading lightText={false}>Lézervágás</Heading>
         <InfoWrapper>
-         <TopLine lightText={false}>Hajlítógépeink kétfejes, jobbos, balos rendszerrel is ellátva.
-         <br/> D8-D100-ig szénacél, rozsdamentes, alumínium minőségű csövek hajlítása alkalmasak magas minőségben.</TopLine>
+         <TopLine lightText={false}>Bérmunkában vállalunk nagy pontossággal lemezvágást síklemez lézervágó gépünkel, valamint cső és zártszelvény lézervágását új technológiás Lasertube Fiber gépünkkel.</TopLine>
          </InfoWrapper>      
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             
             <Column1>
               <Subtitle darkText={true}>
-              BLM E-TURN
+              Lasertube LT Fiber
               </Subtitle>
               <VideoContainer>
               <VideoIframe
-               src="https://www.youtube.com/embed/37BgoEhSJ0M" frameBorder="0"
+               src="https://www.youtube.com/embed/YNnEI3ERysk" frameBorder="0"
                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
                  </VideoContainer> 
               <TextWrapper>
-              BLM E-TURN hajlítógépek kétfejes, jobbos és balos rendszerrel egyaránt.
+              Lasertube LT Fiber
+A lézergép a Lasertube család új rendszere, amit speciálisan terveztek és fejlesztettek. Fiber lézerforrással vágja a cső, illetve zártszelvény bármely részét. A Fiber lézer új technológiája jelentős előnyöket ajánl többféle anyag megmunkálás tekintetében - mint például a réz és sárgaréz; alumínium, saválló fém.
+
+Megmunkási jellemzők: - Megmunkált munkadarab legnagyobb hossza: 6000 mm
+
+Legnagyobb keresztmetszet:
+- kerek keresztmetszet (átmérő): 225mm
+- négyszög keresztmetszet: 160x160
+- téglalap keresztmetszet: 200x100
+
+Legkisebb keresztmetszet:
+- kerek keresztmetszet (átmérő): 16mm 
+- négyszög keresztmetszet: 16x16 
+- téglalap keresztmetszet: 16x16
+- Legnagyobb rúdsúly: 200 kg.
+
+Főbb jellemzői:
+
+- teljesen automatikus és programozható elrendezéssel van ellátva
+- 3D Cad -Cam szoftver 
+- optimalizált lézer technológiai adatbázis.
                 </TextWrapper> 
-                
+             
             </Column1>
              <Column2>
              <Subtitle darkText={true}>
-             Pedrazzoli Bend Master 45
+             Sík-lemez lézervágó gép
               </Subtitle>
               <VideoContainer>
               <VideoIframe
                src="https://www.youtube.com/embed/zn6mLzFfOOQ" frameBorder="0"
                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
-                
                  </VideoContainer>    
             
               <TextWrapper>
-                Pedrazzoli Bend Master 45 csőhajlító berendezés, automata adagoló rendszerrel ellátott.
+              Max. 1500*3000 lemezméret kivágására alkalmas.
+
+                Lemezvastagság:
+               <br/> - szénacél esetében 0,5-15 mm
+               <br/>- Rozsdamentes acél: 0,5-12 mm.
+               <br/>- Alumínium lemez 6 mm-ig
+               <br/>- Rézlemez: 3 mm-ig
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               <br/>
+               
                 </TextWrapper> 
             </Column2> 
           
@@ -152,4 +187,4 @@ const Csohajlitas = (
   )
 }
 
-export default Csohajlitas
+export default Lezervagas

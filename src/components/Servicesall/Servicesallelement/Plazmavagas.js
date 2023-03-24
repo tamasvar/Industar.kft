@@ -3,9 +3,8 @@ import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
 import { Modal } from "@mui/material";
-import styled from 'styled-components';
 import HeroSection from '../../HeroSectionVideo'
-import { koordinatalyukasztas } from '../../HeroSectionVideo/data'
+import { plazmavagas } from '../../HeroSectionVideo/data'
 import {
 InfoContainer,
 InfoWrapper,
@@ -17,7 +16,9 @@ TopLine,
 Heading,
 Subtitle,
 Img,
-ImgWrap
+ImgWrap,
+VideoContainer,
+VideoIframe
 } from './Servicesallelement'
 
 const style={
@@ -25,22 +26,8 @@ const style={
     alignItems: "center",
     justifyContent: "center",
 };
-const VideoContainer = styled.div`
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-`;
 
-const VideoIframe = styled.iframe`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-`;
-
-const Koordinatalyukasztas = (
+const Plazmavagas = (
 ) => {
   const[isOpen,setIsOpen]=useState(false)
   const [open, setOpen] = useState(false)
@@ -62,38 +49,41 @@ const Koordinatalyukasztas = (
     <>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <HeroSection {...koordinatalyukasztas}/>
-        <InfoContainer  lightBg={false} id={'koordinatalyukasztas'} >
-        <Heading lightText={false}>Koordináta lyukasztás</Heading>
+        <HeroSection {...plazmavagas}/>
+        <InfoContainer  lightBg={false} id={'plazmavagas'} >
+        <Heading lightText={false}>Plazmavágás</Heading>
         <InfoWrapper>
-         <TopLine lightText={false}>Euromac lyukasztógépünk 1250x3000 mm-es megmunkálási felülettel rendelkezik, 30t nyomóerővel.
+         <TopLine lightText={false}>HP260A 3D típusú plazma és lángvágógép, 3000×6000 mm-es asztallal, AJAN CNC vezérléssel.
+            <br/>- Lángvágási lemezvastagság: 200 mm
+            <br/>- Plazmavágási lemezvastagság: 0,5-50 mm
+            <br/>- 3000x6000 mm-es asztallal, AJAN CNC vezérléssel
           </TopLine>
          </InfoWrapper>      
         <InfoWrapper>
-          
+        
             
         <Column1>
               <Subtitle darkText={true}>
-              Euromac
+              HP260A 3D
               </Subtitle>
               <VideoContainer>
               <VideoIframe
-               src="https://www.youtube.com/embed/ZmJ71kCTuG4" frameBorder="0"
+               src="https://www.youtube.com/embed/sbkITA0M3Jc" frameBorder="0"
                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
+                
                 <TextWrapper>
                 -----------------------------------------------------------------------------------------------------------------------------------------------------------
                 </TextWrapper> 
-                 </VideoContainer> 
-              
-             
+               </VideoContainer>
+                
             </Column1>
               <TextWrapper>
               
                 </TextWrapper> 
             <Column2>
             </Column2>
-          
+            
             
          
         </InfoWrapper>
@@ -103,18 +93,32 @@ const Koordinatalyukasztas = (
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1>
-            <ImgWrap onClick={() => handleOpen('/images/koordinata_lyukasztas-1.jpg')}>
-               <Img src='/images/koordinata_lyukasztas-1.jpg' />
+            <ImgWrap onClick={() => handleOpen('/images/plazmavagas-1.jpg')}>
+               <Img src='/images/plazmavagas-1.jpg' />
                </ImgWrap> 
 
             </Column1>
             <Column2>
-            <ImgWrap onClick={() => handleOpen('/images/koordinata_lyukasztas-3.jpg')}>
-               <Img src='/images/koordinata_lyukasztas-3.jpg' />
+            <ImgWrap onClick={() => handleOpen('/images/plazmavagas-2.jpg')}>
+               <Img src='/images/plazmavagas-2.jpg' />
                </ImgWrap> 
 
             </Column2>
-          </InfoRow>
+            </InfoRow>
+            <InfoRow>
+            <Column1>
+            <ImgWrap onClick={() => handleOpen('/images/plazmavagas-3.jpg')}>
+               <Img src='/images/plazmavagas-3.jpg' />
+               </ImgWrap> 
+
+            </Column1>
+            <Column2>
+            <ImgWrap onClick={() => handleOpen('/images/plazmavagas-4.jpg')}>
+               <Img src='/images/plazmavagas-4.jpg' />
+               </ImgWrap> 
+
+            </Column2>
+            </InfoRow>
         </InfoWrapper>
       </InfoContainer>
       <Footer/>
@@ -122,4 +126,4 @@ const Koordinatalyukasztas = (
   )
 }
 
-export default Koordinatalyukasztas
+export default Plazmavagas

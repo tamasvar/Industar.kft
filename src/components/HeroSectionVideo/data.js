@@ -94,3 +94,131 @@ export const home={
     darkText:true,
    
   };
+  export const plazmavagas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'plazmavagas',
+    video:require('../../video/9 - Plazmavágás.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const szemcseszoras={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'szemcseszoras',
+    video:require('../../video/17 - Mosó.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const hegesztes={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'hegesztes',
+    video:require('../../video/14 - Hegesztőrobot.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const kemiaitisztitas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'kemiaitisztitas',
+    video:require('../../video/12 - Hátsó kis mosók.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const lezervagas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'lezervagas',
+    video:require('../../video/12 - Hátsó kis mosók.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const furesztarcsaelezes={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'furesztarcsaelezes',
+    video:require('../../video/6 - Fűrésztárcsa élezés.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const forgacsolas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'forgacsolas',
+    video:require('../../video/7 - Forgácsolás.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };
+  export const koordinatalyukasztas={
+    id:'about',
+    lightBg:false,
+    lightText:true,
+    lightTextDesc:false,
+    heroH1:'',
+    heroP:'',
+    imgStart:false,
+    to:'koordinatalyukasztas',
+    video:require('../../video/3 - Koordináta lyukasztás.mp4'),
+    alt:'Car',
+    dark:true,
+    primary:true,
+    darkText:true,
+   
+  };

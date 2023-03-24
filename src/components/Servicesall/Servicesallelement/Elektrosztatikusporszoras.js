@@ -77,17 +77,18 @@ const Elektrosztatikusporszoras = (
             
         <Column1>
               <Subtitle darkText={true}>
-              Salvagnini
+              Elektrosztatikus porszórás
               </Subtitle>
               <VideoContainer>
               <VideoIframe
                src="https://www.youtube.com/embed/QhC-mS-H_hs" frameBorder="0"
                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
-                 </VideoContainer> 
-              <TextWrapper>
-              BLM E-TURN hajlítógépek kétfejes, jobbos és balos rendszerrel egyaránt.
+                <TextWrapper>
+                -----------------------------------------------------------------------------------------------------------------------------------------------------------
                 </TextWrapper> 
+                 </VideoContainer> 
+              
              
             </Column1>
               <TextWrapper>

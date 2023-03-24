@@ -65,9 +65,9 @@ const Csodarabolas = (
     <Navbar toggle={toggle}/>
     <HeroSection {...csodarabolas}/>
     <InfoContainer  lightBg={false} id={'elektrosztatikusporszoras'} >
-    <Heading lightText={false}>Koordináta lyukasztás</Heading>
+    <Heading lightText={false}>Csődarabolás</Heading>
     <InfoWrapper>
-     <TopLine lightText={false}>Euromac lyukasztógépünk 1250x3000 mm-es megmunkálási felülettel rendelkezik, 30t nyomóerővel.
+     <TopLine lightText={false}>Csődarabolás CNC darabológépen ø8mm-ø76mm-ig 6000 mm szálból max. 3000 mm külső, belső sorjázással, kötegeléssel.
       </TopLine>
      </InfoWrapper>      
     <InfoWrapper>
@@ -75,17 +75,18 @@ const Csodarabolas = (
         
     <Column1>
           <Subtitle darkText={true}>
-          Salvagnini
+       
           </Subtitle>
           <VideoContainer>
           <VideoIframe
-           src="https://www.youtube.com/embed/ZmJ71kCTuG4" frameBorder="0"
+           src="https://www.youtube.com/embed/njo9vR1m5xk" frameBorder="0"
            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen/>
+            <TextWrapper>
+            -----------------------------------------------------------------------------------------------------------------------------------------------------------
+            </TextWrapper>
              </VideoContainer> 
-          <TextWrapper>
-          BLM E-TURN hajlítógépek kétfejes, jobbos és balos rendszerrel egyaránt.
-            </TextWrapper> 
+           
          
         </Column1>
           <TextWrapper>
@@ -103,11 +104,17 @@ const Csodarabolas = (
     <InfoWrapper>
       <InfoRow  imgStart={false} >
         <Column1>
-        <ImgWrap onClick={() => handleOpen('/images/elektrosztatikus_porszoras.jpg')}>
-           <Img src='/images/elektrosztatikus_porszoras.jpg' />
+        <ImgWrap onClick={() => handleOpen('/images/csodarabolas-2.jpg')}>
+           <Img src='/images/csodarabolas-2.jpg' />
            </ImgWrap> 
 
         </Column1>
+        <Column2>
+        <ImgWrap onClick={() => handleOpen('/images/csodarabolas-3.jpg')}>
+           <Img src='/images/csodarabolas-3.jpg' />
+           </ImgWrap> 
+
+        </Column2>
       </InfoRow>
     </InfoWrapper>
   </InfoContainer>

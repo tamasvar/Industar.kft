@@ -5,7 +5,7 @@ import Footer from '../../Footer'
 import { Modal } from "@mui/material";
 import styled from 'styled-components';
 import HeroSection from '../../HeroSectionVideo'
-import { koordinatalyukasztas } from '../../HeroSectionVideo/data'
+import { elektrosztatikusporszoras, kemiaitisztitas } from '../../HeroSectionVideo/data'
 import {
 InfoContainer,
 InfoWrapper,
@@ -40,7 +40,7 @@ const VideoIframe = styled.iframe`
   height: 100%;
 `;
 
-const Koordinatalyukasztas = (
+const Kemiaitisztitas = (
 ) => {
   const[isOpen,setIsOpen]=useState(false)
   const [open, setOpen] = useState(false)
@@ -62,11 +62,11 @@ const Koordinatalyukasztas = (
     <>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <HeroSection {...koordinatalyukasztas}/>
-        <InfoContainer  lightBg={false} id={'koordinatalyukasztas'} >
-        <Heading lightText={false}>Koordináta lyukasztás</Heading>
+        <HeroSection {...kemiaitisztitas}/>
+        <InfoContainer  lightBg={false} id={'kemiaitisztitas'} >
+        <Heading lightText={false}>Kémiai tisztítás</Heading>
         <InfoWrapper>
-         <TopLine lightText={false}>Euromac lyukasztógépünk 1250x3000 mm-es megmunkálási felülettel rendelkezik, 30t nyomóerővel.
+         <TopLine lightText={false}>Permetező rendszerű kémiai tisztító, foszfátozó berendezésünkkel maximum 800 mm hosszú alkatrész tisztítását tudjuk elvégezni.
           </TopLine>
          </InfoWrapper>      
         <InfoWrapper>
@@ -74,18 +74,18 @@ const Koordinatalyukasztas = (
             
         <Column1>
               <Subtitle darkText={true}>
-              Euromac
+              
               </Subtitle>
               <VideoContainer>
               <VideoIframe
-               src="https://www.youtube.com/embed/ZmJ71kCTuG4" frameBorder="0"
+               src="https://www.youtube.com/embed/uC3wwDrAKUM" frameBorder="0"
                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen/>
+                allowFullScreen/> 
                 <TextWrapper>
-                -----------------------------------------------------------------------------------------------------------------------------------------------------------
+              --------------------------------------------------------------------------------------------
                 </TextWrapper> 
                  </VideoContainer> 
-              
+             
              
             </Column1>
               <TextWrapper>
@@ -97,29 +97,23 @@ const Koordinatalyukasztas = (
             
          
         </InfoWrapper>
-        <Modal sx={style}  open={open} onClose={handleClose}>
+        {/* <Modal sx={style}  open={open} onClose={handleClose}>
                         <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src={image} alt="Modal Image" />
                   </Modal>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1>
-            <ImgWrap onClick={() => handleOpen('/images/koordinata_lyukasztas-1.jpg')}>
-               <Img src='/images/koordinata_lyukasztas-1.jpg' />
+            <ImgWrap onClick={() => handleOpen('/images/elektrosztatikus_porszoras.jpg')}>
+               <Img src='/images/elektrosztatikus_porszoras.jpg' />
                </ImgWrap> 
 
             </Column1>
-            <Column2>
-            <ImgWrap onClick={() => handleOpen('/images/koordinata_lyukasztas-3.jpg')}>
-               <Img src='/images/koordinata_lyukasztas-3.jpg' />
-               </ImgWrap> 
-
-            </Column2>
           </InfoRow>
-        </InfoWrapper>
+        </InfoWrapper> */}
       </InfoContainer>
       <Footer/>
     </>
   )
 }
 
-export default Koordinatalyukasztas
+export default Kemiaitisztitas
