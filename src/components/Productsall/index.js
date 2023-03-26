@@ -76,7 +76,7 @@ const Productsall = () => {
                   </CardActionArea>
                 </Card>   
                 <Card sx={cardstyle} >
-                  <CardActionArea>
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/products/warthburg" >
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
@@ -90,7 +90,7 @@ const Productsall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea>
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/products/trabant">
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"

@@ -11,6 +11,8 @@ import Elektrosztatikusporszoras from './components/Servicesall/Servicesalleleme
 import Koordinatalyukasztas from './components/Servicesall/Servicesallelement/Koordinatalyukasztas';
 import Products from './pages/products';
 import Lada from './components/Productsall/Productsallelement/Lada';
+import Warthburg from './components/Productsall/Productsallelement/Warthburg';
+import Trabant from './components/Productsall/Productsallelement/Trabant';
 import Contacts from './pages/contacts';
 import Certifications from './pages/certifications';
 import Furesztarcsaelezes from './components/Servicesall/Servicesallelement/Furesztarcsaelezes';
@@ -51,6 +53,8 @@ function App() {
         <Route path="/services/elektrosztatikusporszoras" component={Elektrosztatikusporszoras} exact />
         <Route path="/services/koordinatalyukasztas" component={Koordinatalyukasztas} exact />
         <Route path="/products/lada" component={Lada} exact />
+        <Route path="/products/warthburg" component={Warthburg} exact />
+        <Route path="/products/trabant" component={Trabant} exact />
       </Switch>
     </Router>
   );

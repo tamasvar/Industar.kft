@@ -3,7 +3,7 @@ import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
 import HeroSection from '../../HeroSectionImage'
-import { warthburg } from '../../HeroSectionImage/data'
+import { trabant } from '../../HeroSectionImage/data'
 import { 
   Card, CardContent, CardMedia,CardActionArea,FormControl,InputLabel,Select,MenuItem,Modal
 } from "@mui/material";
@@ -66,13 +66,13 @@ const style={
 };
  
 
-const Warthburg = () => {
+const Trabant = () => {
   
   
   const[isOpen,setIsOpen]=useState(false)
   const [open, setOpen] = useState(false)
   const [image, setImage] = useState(null)
-  const [selectedId, setSelectedId] = useState("warthburg");
+  const [selectedId, setSelectedId] = useState("trabant");
 
   const handleOpen = (img) => {
     setOpen(true)
@@ -90,7 +90,7 @@ const Warthburg = () => {
     <>
     <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <HeroSection {...warthburg}/>
+        <HeroSection {...trabant}/>
         <FormControl sx={formControl} >
           <InputLabel  id="select-label"  sx={formLabel} ></InputLabel>
           <Select 
@@ -99,14 +99,14 @@ const Warthburg = () => {
             sx={{color: 'red', fontSize: '20px',fontWeight: 'bold'}}
             onChange={(event) => setSelectedId(event.target.value)}
           >
-            <MenuItem  value="warthburg">Warthburg Karosszéria</MenuItem>
+            <MenuItem  value="trabant">Trabant Karosszéria</MenuItem>
         
-            <MenuItem value="warthburg1">Warthburg Kipufugok</MenuItem>
+            <MenuItem value="trabant1">Trabant Kipufugok</MenuItem>
           
           </Select>
         </FormControl>  
         
-    {selectedId === "warthburg" &&<ServicesContainer id="warthburg" >          
+    {selectedId === "trabant" &&<ServicesContainer id="trabant" >          
         <ServicesH1>Karosszéria elemek</ServicesH1> 
               
         <ServicesWrapper>
@@ -114,15 +114,15 @@ const Warthburg = () => {
                         <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src={image} alt="Modal Image" />
                   </Modal>
                   <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Doblemezjavító folt.jpg')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Csomagtér fenéklemez.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Wartburg_Doblemezjavító folt.jpg'
+                      src='/images/Trabant_Csomagtér fenéklemez.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Doblemezjavító folt</ServicesH2>
+                    <ServicesH2>Csomagtér fenéklemez</ServicesH2>
                     <ServicesP>
                    
                     </ServicesP>
@@ -131,12 +131,29 @@ const Warthburg = () => {
                 </Card>
                 
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/Wartburg_Felső küszöb.jpg')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Trabant_Csomagtér merevítő borda.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                       
-                      src='/images/Wartburg_Felső küszöb.jpg'
+                      src='/images/Trabant_Csomagtér merevítő borda.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Csomagtér merevítő borda</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Felső küszöb.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Trabant_Felső küszöb.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
@@ -147,17 +164,53 @@ const Warthburg = () => {
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Hátsó ajtó alatti ív.jpg')} >
+            </ServicesWrapper>
+            <ServicesWrapper>
+            <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Hattyúnyak.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                      
-                      src='/images/Wartburg_Hátsó ajtó alatti ív.jpg'
+                      src='/images/Trabant_Hattyúnyak.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Hátsó ajtó alatti ív</ServicesH2>
+                    <ServicesH2>Hattyúnyak</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Homlokfal összekötő.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Trabant_Homlokfal összekötő.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Homlokfal összekötő</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Kerékagy biztosító lemez.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Trabant_Kerékagy biztosító lemez.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Kerékagy biztosító lemez</ServicesH2>
                     <ServicesP>
                     
                     </ServicesP>
@@ -167,16 +220,16 @@ const Warthburg = () => {
             </ServicesWrapper>
             <ServicesWrapper>
             <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Hátsó sárvédő bal,jobb.jpg')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Kerékdob javító ív.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                      
-                      src='/images/Wartburg_Hátsó sárvédő bal,jobb.jpg'
+                      src='/images/Trabant_Kerékdob javító ív.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Hátsó sárvédő bal,jobb</ServicesH2>
+                    <ServicesH2>Kerékdob javító ív</ServicesH2>
                     <ServicesP>
                     
                     </ServicesP>
@@ -184,16 +237,16 @@ const Warthburg = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Küszöbvég.jpg')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Köténylemez.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                      
-                      src='/images/Wartburg_Küszöbvég.jpg'
+                      src='/images/Trabant_Köténylemez.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Küszöbvég</ServicesH2>
+                    <ServicesH2>Köténylemez</ServicesH2>
                     <ServicesP>
                     
                     </ServicesP>
@@ -201,16 +254,16 @@ const Warthburg = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Szerelt küszöb.jpg')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Küszöb emelővel hosszú.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                      
-                      src='/images/Wartburg_Szerelt küszöb.jpg'
+                      src='/images/Trabant_Küszöb emelővel hosszú.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Szerelt küszöb</ServicesH2>
+                    <ServicesH2>Küszöb emelővel hosszú</ServicesH2>
                     <ServicesP>
                     
                     </ServicesP>
@@ -220,16 +273,86 @@ const Warthburg = () => {
             </ServicesWrapper>
             <ServicesWrapper>
             <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Véges küszöb.jpg')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Küszöb emelővel rövid.jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                      
-                      src='/images/Wartburg_Véges küszöb.jpg'
+                      src='/images/Trabant_Küszöb emelővel rövid.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Véges küszöb</ServicesH2>
+                    <ServicesH2>Küszöb emelővel rövid</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Lökhárító tartó.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Trabant_Lökhárító tartó.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Lökhárító tartó</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Szemöldöklemez.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Trabant_Szemöldöklemez.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Szemöldöklemez</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+            </ServicesWrapper>
+            <ServicesWrapper>
+            <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Teleszkóptorony lemez.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Trabant_Teleszkóptorony lemez.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Teleszkóptorony lemez</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Teleszkóptorony.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Trabant_Teleszkóptorony.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Teleszkóptorony</ServicesH2>
                     <ServicesP>
                     
                     </ServicesP>
@@ -241,7 +364,7 @@ const Warthburg = () => {
             
     </ServicesContainer>}
     
-    {selectedId === "warthburg1" &&<ServicesContainer id="warthburg1" >          
+    {selectedId === "trabant1" &&<ServicesContainer id="trabant1" >          
         <ServicesH1>Kipufugok</ServicesH1> 
               
         <ServicesWrapper>
@@ -249,16 +372,16 @@ const Warthburg = () => {
                         <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src={image} alt="Modal Image" />
                   </Modal>
                     <Card sx={cardstyle} >
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Y cső(1.3).jpg')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Elülső fűtődob(601).jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                       
-                      src='/images/Wartburg_Y cső(1.3).jpg'
+                      src='/images/Trabant_Elülső fűtődob(601).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent} >
-                    <ServicesH2>Y cső(1.3)</ServicesH2>
+                    <ServicesH2>Elülső fűtődob(601)</ServicesH2>
                     <ServicesP>
                      
                     </ServicesP>
@@ -268,30 +391,30 @@ const Warthburg = () => {
                 </Card>
                 
                 <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Összekötő cső(1.3).jpg')}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Hátsó dob(601).jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Wartburg_Összekötő cső(1.3).jpg'
+                      src='/images/Trabant_Hátsó dob(601).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Összekötő cső(1.3)</ServicesH2>
+                    <ServicesH2>Hátsó dob(601)</ServicesH2>
                     <ServicesP></ServicesP>
                     </CardContent>
                   </CardActionArea>
                   
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/Wartburg_Középdob(1.3).jpg')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Trabant_Hosszú cső(601).jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Wartburg_Középdob(1.3).jpg'
+                      src='/images/Trabant_Hosszú cső(601).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Középdob(1.3)</ServicesH2>
+                    <ServicesH2>Hosszú cső(601)</ServicesH2>
                     <ServicesP>
                     
                     </ServicesP>
@@ -302,15 +425,15 @@ const Warthburg = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Hátsó dob(1.3).jpg')}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Trabant_Hátsó dob(1.1).jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Wartburg_Hátsó dob(1.3).jpg'
+                      src='/images/Trabant_Hátsó dob(1.1).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Hátsó dob(1.3)</ServicesH2>
+                    <ServicesH2>Hátsó dob(1.1)</ServicesH2>
                     <ServicesP>
                    
                     </ServicesP>
@@ -318,67 +441,35 @@ const Warthburg = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/Wartburg_Középdob(353).jpg')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Trabant_Középdob(1.1).jpg')}>
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Wartburg_Középdob(353).jpg'
+                      src='/images/Trabant_Középdob(1.1).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}> 
-                    <ServicesH2>Középdob(353)</ServicesH2>
+                    <ServicesH2>Középdob(1.1)</ServicesH2>
                     <ServicesP> </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/Wartburg_Hosszú cső(353).jpg')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Trabant_Leömlő cső(1.1).jpg')}>
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Wartburg_Hosszú cső(353).jpg'
+                      src='/images/Trabant_Leömlő cső(1.1).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}> 
-                    <ServicesH2>Hosszú cső(353)</ServicesH2>
+                    <ServicesH2>Leömlő cső(1.1)</ServicesH2>
                     <ServicesP> </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
             </ServicesWrapper>
-            <ServicesWrapper>
-                    <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Wartburg_Hátsó dob(353).jpg')}>
-                    <CardMedia sx={imagestyle}
-                      component="img"
-                      height="200"
-                      src='/images/Wartburg_Hátsó dob(353).jpg'
-                      alt="green iguana"
-                    />
-                    <CardContent sx={cardContent}>
-                    <ServicesH2>Hátsó dob(353)</ServicesH2>
-                    <ServicesP>
-                   
-                    </ServicesP>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-                <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/Wartburg_Elülső dob(353).jpg')}>
-                    <CardMedia  sx={imagestyle}
-                      component="img"
-                      height="200"
-                      src='/images/Wartburg_Elülső dob(353).jpg'
-                      alt="green iguana"
-                    />
-                    <CardContent sx={cardContent}> 
-                    <ServicesH2>Elülső dob(353)</ServicesH2>
-                    <ServicesP> </ServicesP>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-                
-            </ServicesWrapper>
+            
             
     </ServicesContainer>}
     
@@ -387,4 +478,4 @@ const Warthburg = () => {
   )
 }
 
-export default Warthburg
+export default Trabant

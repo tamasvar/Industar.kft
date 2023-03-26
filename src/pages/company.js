@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 import HeroSection from '../components/HeroSectionImage';
 import { company } from '../components/HeroSectionImage/data'
 
+
 const Company = () => {
   const[isOpen,setIsOpen]=useState(false)
 
