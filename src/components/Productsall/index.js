@@ -137,22 +137,7 @@ const Productsall = () => {
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={cardstyle} >
-                  <CardActionArea>
-                    <CardMedia  sx={imagestyle}
-                      component="img"
-                      height="300"
-                      src='/images/Termék_Skoda favorit.jpg'
-                      alt="green iguana"
-                    />
-                    <CardContent sx={cardContent}>
-                    <ServicesH2>Skoda Favorit</ServicesH2>
-                    <ServicesP>
-                     {/*  Permetező rendszerű kémiai tisztító, foszfátozó berendezésünkkel maximum 800 mm hosszú alkatrész tisztítását tudjuk elvégezni. */}
-                    </ServicesP>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                
             </ServicesWrapper>
             
             <ServicesWrapper>
