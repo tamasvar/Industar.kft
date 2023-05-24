@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import HeroSection from '../components/HeroSectionImage';
 import { company } from '../components/HeroSectionImage/data'
-
+import Particles from '../components/Particles/particles'
 
 const Company = () => {
   const[isOpen,setIsOpen]=useState(false)
@@ -88,13 +88,19 @@ const Company = () => {
     
   },];
   return (
-    <>
+    <><Particles/>
      <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection {...company}/>
         <div id={'timeline'} >
             <Chrono  
-           
+            theme={{
+            primary: 'red',
+            secondary: 'blue',
+            cardBgColor: '#f0dddd',
+            titleColor: 'white',
+            titleColorActive: 'red',
+          }}
             items={items} 
             mode="VERTICAL" 
             

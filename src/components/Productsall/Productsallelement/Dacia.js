@@ -3,7 +3,7 @@ import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
 import HeroSection from '../../HeroSectionImage'
-import { warthburg } from '../../HeroSectionImage/data'
+import { dacia } from '../../HeroSectionImage/data'
 import { 
   Card, CardContent, CardMedia,CardActionArea,FormControl,InputLabel,Select,MenuItem,Modal
 } from "@mui/material";
@@ -72,7 +72,7 @@ const Dacia = () => {
   const[isOpen,setIsOpen]=useState(false)
   const [open, setOpen] = useState(false)
   const [image, setImage] = useState(null)
-  const [selectedId, setSelectedId] = useState("warthburg");
+  const [selectedId, setSelectedId] = useState("dacia");
 
   const handleOpen = (img) => {
     setOpen(true)
@@ -90,7 +90,7 @@ const Dacia = () => {
     <>
     <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <HeroSection {...warthburg}/>
+        <HeroSection {...dacia}/>
         <FormControl sx={formControl} >
           <InputLabel  id="select-label"  sx={formLabel} ></InputLabel>
           <Select 

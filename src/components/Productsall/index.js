@@ -3,7 +3,7 @@ import {
   Card, CardContent, CardMedia,CardActionArea
 } from "@mui/material";
 import { Link as RouterLink } from 'react-router-dom'
-
+import Particles from '../../components/Particles/particles'
 
 import { 
   ServicesContainer,
@@ -54,6 +54,8 @@ const Productsall = () => {
     } 
   } 
   return (
+  <><Particles/>
+ 
     <ServicesContainer id="productsall">          
         <ServicesH1>Termékek</ServicesH1>       
         
@@ -108,7 +110,7 @@ const Productsall = () => {
             </ServicesWrapper>
             <ServicesWrapper>
                     <Card sx={cardstyle}>
-                  <CardActionArea  component={RouterLink} to="/about" >
+                  <CardActionArea  onClick={handleClick} component={RouterLink} to="/products/dacia" >
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
@@ -124,7 +126,7 @@ const Productsall = () => {
                   </CardActionArea>
                 </Card>
                 <Card sx={cardstyle}>
-                  <CardActionArea>
+                  <CardActionArea onClick={handleClick} component={RouterLink} to="/products/skoda" >
                     <CardMedia  sx={imagestyle}
                       component="img"
                       height="300"
@@ -243,7 +245,7 @@ const Productsall = () => {
                 </Card>
             </ServicesWrapper>
     </ServicesContainer>
-  )
+    </>)
 }
 
 export default Productsall

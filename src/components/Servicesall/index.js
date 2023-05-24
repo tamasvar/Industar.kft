@@ -3,6 +3,7 @@ import {
   Card, CardContent, CardMedia,CardActionArea
 } from "@mui/material";
 import { Link as RouterLink } from 'react-router-dom'
+import Particles from '../../components/Particles/particles'
 
 
 
@@ -53,7 +54,8 @@ const Servicesall = () => {
     } 
   } 
   return (
-    <ServicesContainer id="services">          
+    <><Particles/>
+    <ServicesContainer id="services">       
         <ServicesH1>Szolgáltatások</ServicesH1>       
         <ServicesWrapper>
                     <Card sx={cardstyle}>
@@ -252,7 +254,7 @@ const Servicesall = () => {
                 </Card>
             </ServicesWrapper>
     </ServicesContainer>
-  )
+  </>)
 }
 
 export default Servicesall

@@ -3,7 +3,7 @@ import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
 import HeroSection from '../../HeroSectionImage'
-import { warthburg } from '../../HeroSectionImage/data'
+import { skoda } from '../../HeroSectionImage/data'
 import { 
   Card, CardContent, CardMedia,CardActionArea,FormControl,InputLabel,Select,MenuItem,Modal
 } from "@mui/material";
@@ -90,7 +90,7 @@ const Skoda = () => {
     <>
     <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <HeroSection {...warthburg}/>
+        <HeroSection {...skoda}/>
         <FormControl sx={formControl} >
           <InputLabel  id="select-label"  sx={formLabel} ></InputLabel>
           <Select 
@@ -99,9 +99,9 @@ const Skoda = () => {
             sx={{color: 'red', fontSize: '20px',fontWeight: 'bold'}}
             onChange={(event) => setSelectedId(event.target.value)}
           >
-            <MenuItem  value="skoda">Dacia Karosszéria</MenuItem>
+            <MenuItem  value="skoda">Skoda Karosszéria</MenuItem>
         
-            <MenuItem value="skoda1">Dacia Kipufugok</MenuItem>
+            <MenuItem value="skoda1">Skoda Kipufugok</MenuItem>
           
           </Select>
         </FormControl>  
@@ -165,6 +165,78 @@ const Skoda = () => {
                   </CardActionArea>
                 </Card>
             </ServicesWrapper>
+            <ServicesWrapper>
+            <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Skoda_Hátsó sárvédő javítóív(régi típ.).jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Skoda_Hátsó sárvédő javítóív(régi típ.).jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Hátsó sárvédő javítóív(régi típ.)</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Skoda_Hátsó sárvédő javítóív GL (új típ.).jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Skoda_Hátsó sárvédő javítóív GL (új típ.).jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Hátsó sárvédő javítóív GL (új típ.)</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Skoda_Alsó köszöb(105-120).jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Skoda_Alsó köszöb(105-120).jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Alsó köszöb(105-120)</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+            </ServicesWrapper>
+            <ServicesWrapper>
+            <Card sx={cardstyle}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Skoda Favorit_Külső küszüb.jpg')} >
+                    <CardMedia sx={imagestyle}
+                      component="img"
+                      height="200"
+                     
+                      src='/images/Skoda Favorit_Külső küszüb.jpg'
+                      alt="green iguana"
+                    />
+                    <CardContent sx={cardContent}>
+                    <ServicesH2>Favorit_Külső küszüb</ServicesH2>
+                    <ServicesP>
+                    
+                    </ServicesP>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+            </ServicesWrapper>
            
             
             
@@ -178,16 +250,16 @@ const Skoda = () => {
                         <Img style={{ maxHeight: "80%", maxWidth: "80%" }} src={image} alt="Modal Image" />
                   </Modal>
                     <Card sx={cardstyle} >
-                  <CardActionArea  onClick={() => handleOpen('/images/Dacia_Y cső.jpg')} >
+                  <CardActionArea  onClick={() => handleOpen('/images/Skoda_Kipufogódob(105-120).jpg')} >
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
                       
-                      src='/images/Dacia_Y cső.jpg'
+                      src='/images/Skoda_Kipufogódob(105-120).jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent} >
-                    <ServicesH2>Y cső</ServicesH2>
+                    <ServicesH2>Kipufogódob(105-120)</ServicesH2>
                     <ServicesP>
                      
                     </ServicesP>
@@ -197,30 +269,30 @@ const Skoda = () => {
                 </Card>
                 
                 <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Dacia_Összekötő cső.jpg')}>
+                  <CardActionArea  onClick={() => handleOpen('/images/Skoda Favorit_Középdob.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Dacia_Összekötő cső.jpg'
+                      src='/images/Skoda Favorit_Középdob.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Összekötő cső</ServicesH2>
+                    <ServicesH2>Favorit_Középdob</ServicesH2>
                     <ServicesP></ServicesP>
                     </CardContent>
                   </CardActionArea>
                   
                 </Card>
                 <Card sx={cardstyle} >
-                  <CardActionArea onClick={() => handleOpen('/images/Dacia_Középdob.jpg')}>
+                  <CardActionArea onClick={() => handleOpen('/images/Skoda Favorit_Hátsó dob.jpg')}>
                     <CardMedia sx={imagestyle}
                       component="img"
                       height="200"
-                      src='/images/Dacia_Középdob.jpg'
+                      src='/images/Skoda Favorit_Hátsó dob.jpg'
                       alt="green iguana"
                     />
                     <CardContent sx={cardContent}>
-                    <ServicesH2>Középdob</ServicesH2>
+                    <ServicesH2>Favorit_Hátsó dob</ServicesH2>
                     <ServicesP>
                     
                     </ServicesP>
@@ -229,25 +301,7 @@ const Skoda = () => {
                   
                 </Card>
             </ServicesWrapper>
-            <ServicesWrapper>
-                    <Card sx={cardstyle}>
-                  <CardActionArea  onClick={() => handleOpen('/images/Dacia_Hátsó dob.jpg')}>
-                    <CardMedia sx={imagestyle}
-                      component="img"
-                      height="200"
-                      src='/images/Dacia_Hátsó dob.jpg'
-                      alt="green iguana"
-                    />
-                    <CardContent sx={cardContent}>
-                    <ServicesH2>Hátsó dob</ServicesH2>
-                    <ServicesP>
-                   
-                    </ServicesP>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
             
-            </ServicesWrapper>
             
             
     </ServicesContainer>}
