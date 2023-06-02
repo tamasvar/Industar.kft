@@ -23,7 +23,7 @@ export const TextWrapper=styled.div`
 `
 
 export const TopLine=styled.p`
-    color: #01bf71;
+    color: #f2f2f2;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -83,7 +83,7 @@ export const ServicesIcon=styled.img`
 
 export const ServicesH1=styled.h1`
     font-size: 2.5rem;
-    color: #fff;
+    color: #ffa536;
     margin-bottom: 64px;
     font-weight: bold;
     
@@ -100,7 +100,7 @@ export const ServicesH2=styled.h2`
     margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
-    color: rgb(0, 255, 0);
+    color: #a5ff36;
     text-shadow: 2px 2px #000;
 
    

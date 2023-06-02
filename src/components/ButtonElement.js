@@ -4,12 +4,14 @@ import{Link as LinkS} from 'react-scroll'
 
 export const Button=styled(LinkR)`
 border-radius: 50px;
-background: ${({primary})=>(primary?'#01BF71':'#010606')};
+background: ${({primary})=>(primary?'#ffa536':'#010606')};
 white-space: nowrap;
 padding: ${({big})=>(big?'14px 48px':'12px 30px')};
-color: ${({dark})=>(dark?'#010606':'#fff')};
+color: ${({dark})=>(dark?'#a5ff36':'#010606')};
 font-size: ${({fontBig})=>(fontBig?'20px':'16px')};
 outline: none;
+text-decoration: none;
+font-weight: bold;
 border: none;
 cursor: pointer;
 display: flex;

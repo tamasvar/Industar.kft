@@ -57,7 +57,7 @@ export const TextWrapper=styled.div`
   
 `
 export const TopLine=styled.p`
-    color: #01bf71;
+    color: #f2f2f2;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -72,7 +72,7 @@ export const Heading =styled.h1`
     line-height: 1.1;
     font-weight: 600;
     padding-top:50px;
-    color: #f7f8fa;
+    color: #ffa536;
     text-align:center;
     @media screen and (max-width:480px) {
     font-size: 32px;
