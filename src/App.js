@@ -25,7 +25,8 @@ import Hegesztes from './components/Servicesall/Servicesallelement/Hegesztes';
 import Szemcseszoras from './components/Servicesall/Servicesallelement/Szemcseszoras';
 import Plazmavagas from './components/Servicesall/Servicesallelement/Plazmavagas';
 
-
+import { I18nextProvider } from 'react-i18next';
+import i18n from './components/Lang/i18n';
 
 
 
@@ -33,6 +34,7 @@ import Plazmavagas from './components/Servicesall/Servicesallelement/Plazmavagas
 function App() {
   return (
     <Router>
+      <I18nextProvider i18n={i18n}>
       <Switch>
       
         <Route path="/" component={Home} exact />
@@ -60,6 +62,7 @@ function App() {
         <Route path="/products/dacia" component={Dacia} exact />
         <Route path="/products/skoda" component={Skoda} exact />
       </Switch>
+      </I18nextProvider>
     </Router>
   );
 }

@@ -76,6 +76,29 @@ export const NavMenu=styled.ul`
 export const NavItem=styled.li`
     height: 80px;
 `
+export const FlagIcon = styled.img`
+  border-radius: 50%;
+`
+export const LanguageOptions = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+`
+export const LanguageOptionsContainer = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+`
 export const NavLinks=styled(LinkR)`
     color: #fff;
     display: flex;

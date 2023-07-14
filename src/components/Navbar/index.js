@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons';
 import { animateScroll as scroll } from 'react-scroll';
-
+import { useTranslation } from 'react-i18next';
+import LanguageSelect from '../Lang/lang';
 import { 
   Nav,
   NavbarContainer,
@@ -11,12 +12,15 @@ import {
   NavItem,
   NavMenu,
   NavLinks,
- 
+  FlagIcon,
+  LanguageOptions,
  } from './NavbarElements';
 
 
 const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav]= useState(false);
+  const [showLanguageOptions, setShowLanguageOptions] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const changeNav=()=>{
     if(window.scrollY >= 80){
@@ -28,10 +32,20 @@ const Navbar = ({toggle}) => {
   useEffect(()=>{
     window.addEventListener('scroll',changeNav);
   },[])
-
+  const languages = [
+    { code: 'hu', name: 'Hungarian' },
+    { code: 'en', name: 'English' },
+  ];
   const toggleHome=()=>{
     scroll.scrollToTop();
   }
+  const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang);
+  }
+  const toggleLanguageOptions = () => {
+    setShowLanguageOptions((prevShowLanguageOptions) => !prevShowLanguageOptions);
+  }
+ 
   return (
     <>
     <IconContext.Provider value={{color:'#fff'}}>
@@ -50,31 +64,50 @@ const Navbar = ({toggle}) => {
                  
                  exact='true' 
                  offset={-80}
-                >Cégbemutató</NavLinks>
+                >
+                  {t('navbar.company')}
+                </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks onClick={toggleHome}  to='/services'
                  exact='true' 
                  offset={-80}
-                >Szolgáltatások</NavLinks>
+                >
+                  {t('navbar.services')}
+                </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks onClick={toggleHome}  to='/products'
                  exact='true' 
                  offset={-80}
-                 >Termékek</NavLinks>
+                 >
+                  {t('navbar.products')}
+                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks onClick={toggleHome} to='/certifications'
                  exact='true' 
                  offset={-80}
-                 >Tanúsítványok</NavLinks>
+                 >
+                  {t('navbar.certifications')}
+                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks onClick={toggleHome} to='/contacts'
                  exact='true' 
                  offset={-80}
-                 >Kapcsolat</NavLinks>
+                 > 
+                 {t('navbar.contacts')}
+                 </NavLinks>
+              </NavItem>
+              <NavItem>
+              <NavLinks onClick={toggleLanguageOptions}>
+                  <LanguageSelect
+                    languages={languages}
+                    handleLanguageChange={handleLanguageChange}
+                  />
+                </NavLinks>
+                
               </NavItem>
             </NavMenu>
             
