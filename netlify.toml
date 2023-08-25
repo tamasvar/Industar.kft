@@ -1,7 +1,0 @@
-[[plugins]]
-  package = "netlify-plugin-cloudinary"
-
-  [plugins.inputs]
-  cloudName = "skydragon"
-  deliveryType="upload"
-  
