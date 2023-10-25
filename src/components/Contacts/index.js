@@ -146,7 +146,7 @@ const Certifications = () => {
                           <IconButton>  
                             <FaxIcon />
                           </IconButton>
-                          <span>+36-46/383-475</span>
+                          <span>+36-46/383-888</span>
                         </ServicesP>
                       <ServicesP>
                         {/*  CNC gépeken végzett 3D csőhajlítás ø8mm-ø76mm-ig ø32mm-i változó sugár is lézeres mérőgéppel ellenőrizve.  */}
@@ -183,7 +183,7 @@ const Certifications = () => {
                           <IconButton>  
                             <FaxIcon />
                           </IconButton>
-                          <span>+36-46/383-475</span>
+                          <span>+36-46/383-888</span>
                         </ServicesP>
                       <ServicesP>
                         {/*  CNC gépeken végzett 3D csőhajlítás ø8mm-ø76mm-ig ø32mm-i változó sugár is lézeres mérőgéppel ellenőrizve.  */}
@@ -252,13 +252,13 @@ const Certifications = () => {
                           <span>+36-46/383-422</span>
                         </ServicesP>
                         <ServicesP>
-                          <IconButton href='tel:+3646383475'>  
+                          <IconButton href='tel:+3646383888'>  
                             <PhoneIcon sx={{
                                 transform: transformStyleP,
                                 transition: transition,
                               }}/>
                           </IconButton>
-                          <span>+36-46/383-475</span>
+                          <span>+36-46/383-888</span>
                         </ServicesP>
                       <ServicesP>
                         {/*  CNC gépeken végzett 3D csőhajlítás ø8mm-ø76mm-ig ø32mm-i változó sugár is lézeres mérőgéppel ellenőrizve.  */}
