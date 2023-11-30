@@ -74,7 +74,7 @@ const Products = () => {
                   <CardActionArea onClick={handleClick}  component={RouterLink} to="/products" >
                     <CardMedia  sx={imagestyle}
                       component="img"
-                      height="300"
+                      height="400"
                       src='/images/Termék_Lada.jpg'
                       alt="green iguana"
                     />
@@ -91,7 +91,7 @@ const Products = () => {
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/products" >
                     <CardMedia  sx={imagestyle}
                       component="img"
-                      height="300"
+                      height="400"
                       src='/images/Termék_Wartburg.jpg'
                       alt="green iguana"
                     />
@@ -105,7 +105,7 @@ const Products = () => {
                   <CardActionArea onClick={handleClick} component={RouterLink} to="/products" >
                     <CardMedia  sx={imagestyle}
                       component="img"
-                      height="300"
+                      height="400"
                       image='/images/Termék_Trabant.jpg'
                       alt="green iguana"
                     />

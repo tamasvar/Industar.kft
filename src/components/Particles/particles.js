@@ -23,7 +23,7 @@ const particles = () => {
         autoPlay: true,
   background: {
     color: {
-      value: "#9636bf"
+      value: "#acabaa66"
     },
     image: "",
     position: "50% 50%",
@@ -83,8 +83,8 @@ const particles = () => {
         duration: 0.4,
         easing: "ease-out-quad",
         factor: 1,
-        maxSpeed: 50,
-        speed: 1
+        maxSpeed: 10,
+        speed: 0.5
       },
       bounce: {
         distance: 200
@@ -129,15 +129,15 @@ const particles = () => {
         distance: 200,
         duration: 0.4,
         factor: 100,
-        speed: 1,
-        maxSpeed: 50,
+        speed: 0.5,
+        maxSpeed: 10,
         easing: "ease-out-quad",
         divs: {
           distance: 200,
           duration: 0.4,
           factor: 100,
-          speed: 1,
-          maxSpeed: 50,
+          speed: 0.5,
+          maxSpeed: 10,
           easing: "ease-out-quad",
           selectors: []
         }
@@ -192,7 +192,7 @@ const particles = () => {
     },
     collisions: {
       absorb: {
-        speed: 2
+        speed: 0.5
       },
       bounce: {
         horizontal: {
@@ -224,7 +224,7 @@ const particles = () => {
           count: 0,
           enable: false,
           offset: 0,
-          speed: 1,
+          speed: 0.5,
           decay: 0,
           sync: true
         },
@@ -232,7 +232,7 @@ const particles = () => {
           count: 0,
           enable: false,
           offset: 0,
-          speed: 1,
+          speed: 0.5,
           decay: 0,
           sync: true
         },
@@ -240,7 +240,7 @@ const particles = () => {
           count: 0,
           enable: false,
           offset: 0,
-          speed: 1,
+          speed: 0.5,
           decay: 0,
           sync: true
         }
@@ -275,7 +275,7 @@ const particles = () => {
         acceleration: 9.81,
         enable: false,
         inverse: false,
-        maxSpeed: 50
+        maxSpeed: 10
       },
       path: {
         clamp: true,
@@ -298,7 +298,7 @@ const particles = () => {
       },
       random: false,
       size: false,
-      speed: 2,
+      speed: 0.5,
       spin: {
         acceleration: 0,
         enable: false
@@ -333,7 +333,7 @@ const particles = () => {
       animation: {
         count: 0,
         enable: true,
-        speed: 3,
+        speed: 0.5,
         decay: 0,
         sync: false,
         destroy: "none",
@@ -369,7 +369,7 @@ const particles = () => {
       animation: {
         count: 0,
         enable: true,
-        speed: 20,
+        speed: 1,
         decay: 0,
         sync: false,
         destroy: "none",
@@ -461,7 +461,7 @@ const particles = () => {
         value: 0
       },
       mode: "vertical",
-      speed: 25
+      speed: 2
     },
     tilt: {
       random: {
@@ -494,8 +494,8 @@ const particles = () => {
       distance: 5,
       enable: false,
       speed: {
-        angle: 50,
-        move: 10
+        angle: 20,
+        move: 5
       }
     },
     orbit: {

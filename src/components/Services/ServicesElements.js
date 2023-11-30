@@ -16,7 +16,7 @@ export const ServicesContainer=styled.div`
        
 `
 export const ServicesWrapper=styled.div`
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -42,9 +42,9 @@ export const TextWrapper=styled.div`
 `
 
 export const TopLine=styled.p`
-    color: #f2f2f2;
-    font-size: 16px;
-    line-height: 16px;
+    color: #082238e8;
+    font-size: 19px;
+    line-height: 22px;
     font-weight: 700;
     letter-spacing: 1.4px;
     margin-bottom: 16px;
@@ -83,7 +83,7 @@ export const ServicesIcon=styled.img`
 
 export const ServicesH1=styled.h1`
     font-size: 2.5rem;
-    color:  #ffa536;
+    color:  #13588cba;
     margin-bottom: 64px;
     font-weight: bold;
     

@@ -126,7 +126,7 @@ const InfoSection = () => {
                           <PictureAsPdfIcon />
                         </IconButton>
                        
-                      </Card>
+              </Card> 
               
             </Column2> 
           </InfoRow>

@@ -54,7 +54,7 @@ const Navbar = ({toggle}) => {
             <NavLogo to='/' onClick={toggleHome}
             exact='true' 
             offset={-80}
-            >Industar.kft </NavLogo>
+            >Industar Kft. </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars/>
             </MobileIcon>

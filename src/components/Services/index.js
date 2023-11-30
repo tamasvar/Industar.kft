@@ -74,7 +74,7 @@ const Services = () => {
                   <CardActionArea  onClick={handleClick} component={RouterLink} to="/services">
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="300"
+                      height="400"
                       src='/images/csohajlitas-4.jpg'
                       alt="green iguana"
                     />
@@ -87,7 +87,7 @@ const Services = () => {
                   <CardActionArea  onClick={toggleHome} component={RouterLink} to="/services" >
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="300"
+                      height="400"
                       src='/images/elhajlitas_es_lemez_megmunkalas-1.jpg'
                       alt="green iguana"
                     />
@@ -100,7 +100,7 @@ const Services = () => {
                   <CardActionArea onClick={toggleHome} component={RouterLink} to="/services" >
                     <CardMedia sx={imagestyle}
                       component="img"
-                      height="300"
+                      height="400"
                       image='/images/elektrosztatikus_porszoras.jpg'
                       alt="green iguana"
                     />

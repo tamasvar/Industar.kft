@@ -15,7 +15,7 @@ export const InfoWrapper =styled.div`
     z-index: 1;
     height: auto;
     width:100%;
-    max-width: 1220px;
+    max-width: 1600px;
     margin-right: auto;
     margin-left:auto;
     padding:0 24px;
@@ -31,7 +31,7 @@ export const InfoRow=styled.div`
     
     grid-template-areas: ${({imgStart})=>(imgStart? `'col2 col1'`:`'col1 col2'`)};  
     
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1500px) {
     grid-template-areas: ${({imgStart})=>(imgStart? `'col1' 'col2'`:`'col2 col2' 'col1 col1'`)};
     
 
@@ -51,8 +51,13 @@ export const Column2 = styled.div`
     
 `
 export const TextWrapper=styled.div`
-    max-width: 540px;
+    max-width: 900px;
     padding-top: 0;
+    background-color: #B9B6B6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;  
     
   
 `
@@ -72,21 +77,26 @@ export const Heading =styled.h1`
     line-height: 1.1;
     font-weight: 600;
     padding-top:50px;
-    color: #ffa536;
+    color: #13588cba;
     text-align:center;
     @media screen and (max-width:480px) {
     font-size: 32px;
     }
 `
 export const Subtitle=styled.p`
-    //max-width: 440px;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 35px;
+    //max-width: 800px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    
     font-weight: bold;
     text-align: justify;
+    @media screen and (max-width:700px) {
+        text-align: center;
+
+    }
     
-    color: ${({darkText})=>(darkText ? '#f7f8fa' : '#fff')};
+    color: ${({darkText})=>(darkText ? '#082238e8' : '#fff')};
    
 `
 export const BtnWrap=styled.div`
@@ -94,8 +104,11 @@ export const BtnWrap=styled.div`
     justify-content: flex-start;
 `
 export const ImgWrap=styled.div`
-    max-width: 555px;
     height: 100%;
+    max-width: 900px;
+    padding-top: 0;
+    padding: 10px;
+    margin: 10px
 `
 export const Img =styled.img`
     display: block;

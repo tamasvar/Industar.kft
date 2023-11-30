@@ -27,6 +27,7 @@ const style={
     justifyContent: "center",
 };
 const VideoContainer = styled.div`
+  margin-top:20px;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
@@ -77,32 +78,33 @@ const Csohajlitas = (
               <Subtitle darkText={true}>
               BLM E-TURN
               </Subtitle>
+              <TextWrapper>
+              BLM E-TURN hajlítógépek kétfejes, jobbos és balos rendszerrel egyaránt.           
+                </TextWrapper> 
               <VideoContainer>
               <VideoIframe
                src="https://www.youtube.com/embed/37BgoEhSJ0M" frameBorder="0"
                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
                  </VideoContainer> 
-              <TextWrapper>
-              BLM E-TURN hajlítógépek kétfejes, jobbos és balos rendszerrel egyaránt.
-                </TextWrapper> 
+              
                 
             </Column1>
              <Column2>
              <Subtitle darkText={true}>
              Pedrazzoli Bend Master 45
               </Subtitle>
+               <TextWrapper>
+                Pedrazzoli Bend Master 45 csőhajlító berendezés, automata adagoló rendszerrel ellátott.
+                </TextWrapper> 
               <VideoContainer>
               <VideoIframe
                src="https://www.youtube.com/embed/zn6mLzFfOOQ" frameBorder="0"
                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
-                
                  </VideoContainer>    
             
-              <TextWrapper>
-                Pedrazzoli Bend Master 45 csőhajlító berendezés, automata adagoló rendszerrel ellátott.
-                </TextWrapper> 
+             
             </Column2> 
           
           </InfoRow>

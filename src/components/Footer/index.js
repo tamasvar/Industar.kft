@@ -48,7 +48,7 @@ const Footer = () => {
                             
                     </FooterLinkItems>
                     <FooterLinkItems>
-                        <FooterLink to='/references' onClick={toggleHome}>Tanusítványok</FooterLink>   
+                        <FooterLink to='/certifications' onClick={toggleHome}>Tanusítványok</FooterLink>   
                     </FooterLinkItems>
                     <FooterLinkItems>
                     <FooterLink to='/contacts' onClick={toggleHome}>Kapcsolat</FooterLink>
@@ -62,7 +62,7 @@ const Footer = () => {
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                        Industár Kft.
+                        Industar Kft.
                     </SocialLogo>
                     <FooterLinkItemsBig>
                             <FooterA>Felsőzsolca, Állomás u. 15. Hungary 3561</FooterA>
@@ -71,7 +71,7 @@ const Footer = () => {
                             <FooterA href="mailto:info@industar.hu">info@industar.hu</FooterA>
                             <FooterA href="mailto:oroszne@industar.hu">oroszne@industar.hu</FooterA>
                     </FooterLinkItemsBig>
-                     <WebsiteRights>Copyright {new Date().getFullYear()} © Industár Kft.</WebsiteRights>
+                     <WebsiteRights>Copyright {new Date().getFullYear()} © Industar Kft.</WebsiteRights>
                       <SocialIcons>
                         <SocialIconLink href="https://www.facebook.com/people/Industar-Kft/100069083162287/" target="_blank"
                         aria-label="Facebook"><FacebookIcon/> </SocialIconLink>
