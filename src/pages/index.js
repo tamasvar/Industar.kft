@@ -28,7 +28,6 @@ const Home = () => {
        <ExpansionSection/>
       <Services {...services}/>
       <Products/>
-      
        <Footer/> 
     </>
   )
