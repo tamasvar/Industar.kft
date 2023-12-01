@@ -7,7 +7,7 @@ export const InfoContainer=styled.div`
 
     
     @media screen and (max-width:768px) {
-        padding: 100px 0;
+        padding: 50px 0;
 
     }
 `
@@ -93,7 +93,8 @@ export const Subtitle=styled.p`
     text-align: justify;
     @media screen and (max-width:700px) {
         text-align: center;
-
+        font-size: 16px;
+        line-height: 26px;
     }
     
     color: ${({darkText})=>(darkText ? '#082238e8' : '#fff')};

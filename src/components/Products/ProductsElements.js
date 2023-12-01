@@ -8,10 +8,10 @@ export const ServicesContainer=styled.div`
     align-items: center;
     background: transparent;
         @media screen and (max-width: 1200px){
-            height: 1000px;    
+            height: 1400px;    
         }
         @media screen and (max-width: 850px){
-            height: 1200px;    
+            height: 1700px;    
         }
        
 `

@@ -4,6 +4,7 @@ import{Link as LinkR} from 'react-router-dom'
 
 export const Nav=styled.nav`
     background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    
     height:80px;
     margin-top:-80px;
     display:flex;
@@ -30,7 +31,7 @@ export const NavbarContainer=styled.div`
 
 `    
 export const NavLogo=styled(LinkR)`
-    color:#fff;
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -86,7 +87,7 @@ export const LanguageOptions = styled.div`
   z-index: 999;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: 'transparent';
   padding: 10px;
 `
 export const LanguageOptionsContainer = styled.div`
@@ -96,10 +97,11 @@ export const LanguageOptionsContainer = styled.div`
   z-index: 999;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: 'transparent';
   padding: 10px;
 `
 export const NavLinks=styled(LinkR)`
+    background-color: 'transparent';    
     color: #fff;
     display: flex;
     align-items: center;

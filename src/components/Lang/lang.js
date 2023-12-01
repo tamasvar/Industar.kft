@@ -12,6 +12,7 @@ const LanguageSelector = styled.img`
 `;
 
 const LanguageOptionsContainer = styled.div`
+background:'transparent';
   position: absolute;
   top: 100%;
   left: 0;
@@ -45,13 +46,13 @@ const LanguageSelect = ({ languages, handleLanguageChange }) => {
     handleLanguageChange(languageCode);
   };
   const flagImages = {
-    en: '/images/en_flag.png',
-    hu: '/images/hu_flag.png',
+    en: '/images/en_icon.svg',
+    hu: '/images/hu_icon.svg',
   };
   return (
     <LanguageSelectContainer>
       <LanguageSelector
-        src={`/images/${selectedLanguage}_flag.png`}
+        src={`/images/${selectedLanguage}_icon.svg`}
         alt={selectedLanguage}
         onClick={toggleLanguageOptions}
       />

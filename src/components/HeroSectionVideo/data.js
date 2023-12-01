@@ -19,7 +19,7 @@ export const home={
     lightBg:false,
     lightText:true,
     lightTextDesc:false,
-    heroH1:'',
+    heroH1:'Szolgáltatások',
     heroP:'',
     imgStart:false,
     to:'services',

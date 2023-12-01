@@ -142,7 +142,7 @@ const Productsall = () => {
                 
             </ServicesWrapper>
             
-            <ServicesWrapper>
+               {/* <ServicesWrapper> 
                     <Card sx={cardstyle}>
                   <CardActionArea  component={RouterLink} to="/about" >
                     <CardMedia  sx={imagestyle}
@@ -154,7 +154,7 @@ const Productsall = () => {
                     <CardContent sx={cardContent}>
                     <ServicesH2>Mercedes</ServicesH2>
                     <ServicesP>
-                    {/* ABB hegesztő robotunk segítségével impulzusos és rövidzárlatos hegesztéssel (MIG és MAG) a legkülönfélébb anyagokat is meg tudjuk munkálni. */}
+                    
 
                     </ServicesP>
                     </CardContent>
@@ -171,7 +171,7 @@ const Productsall = () => {
                     <CardContent sx={cardContent}>
                     <ServicesH2>Volkswagen Golf</ServicesH2>
                     <ServicesP>
-                      {/* Zárt rendszerű szemcseszóró berendezésünkkel a porfestésre váró fém alkatrészek felülettisztítását végezzük el. */}
+                      
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -187,7 +187,7 @@ const Productsall = () => {
                     <CardContent sx={cardContent}>
                     <ServicesH2>Zastava</ServicesH2>
                     <ServicesP>
-                     {/* HP260A 3D típusú plazma és lángvágógép, 3000×6000 mm-es asztallal, AJAN CNC vezérléssel. */}
+                     
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -205,7 +205,7 @@ const Productsall = () => {
                     <CardContent sx={cardContent}>
                     <ServicesH2>Aro</ServicesH2>
                     <ServicesP>
-                    {/* ABB hegesztő robotunk segítségével impulzusos és rövidzárlatos hegesztéssel (MIG és MAG) a legkülönfélébb anyagokat is meg tudjuk munkálni. */}
+                    
 
                     </ServicesP>
                     </CardContent>
@@ -222,7 +222,7 @@ const Productsall = () => {
                     <CardContent sx={cardContent}>
                     <ServicesH2>Moszkvics</ServicesH2>
                     <ServicesP>
-                      {/* Zárt rendszerű szemcseszóró berendezésünkkel a porfestésre váró fém alkatrészek felülettisztítását végezzük el. */}
+                      
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
@@ -238,14 +238,15 @@ const Productsall = () => {
                     <CardContent sx={cardContent}>
                     <ServicesH2>Polski Fiat</ServicesH2>
                     <ServicesP>
-                     {/* HP260A 3D típusú plazma és lángvágógép, 3000×6000 mm-es asztallal, AJAN CNC vezérléssel. */}
+                     
                     </ServicesP>
                     </CardContent>
                   </CardActionArea>
                 </Card>
-            </ServicesWrapper>
+            </ServicesWrapper>  */} 
     </ServicesContainer>
     </>)
 }
 
 export default Productsall
+

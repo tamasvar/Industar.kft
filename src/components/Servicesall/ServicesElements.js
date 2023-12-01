@@ -8,8 +8,11 @@ export const ServicesContainer=styled.div`
     align-items: center;
    // background: #010606;
         @media screen and (max-width: 1000px){
-            height: auto;    
-        }
+            height: auto;  
+            
+
+    }  
+        
         
 `
 export const ServicesWrapper=styled.div`
