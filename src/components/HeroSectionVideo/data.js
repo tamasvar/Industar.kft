@@ -167,7 +167,7 @@ export const home={
     heroP:'',
     imgStart:false,
     to:'lezervagas',
-    video:require('../../video/12 - Hátsó kis mosók.mp4'),
+    video:'',
     alt:'Car',
     dark:true,
     primary:true,

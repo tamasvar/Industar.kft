@@ -3,7 +3,7 @@ import Navbar from '../../Navbar'
 import Sidebar from '../../Sidebar'
 import Footer from '../../Footer'
 import HeroSection from '../../HeroSectionVideo'
-import { csohajlitas, lezervagas } from '../../HeroSectionVideo/data'
+import {  lezervagas } from '../../HeroSectionVideo/data'
 import { Modal } from "@mui/material";
 import styled from 'styled-components';
 import {
@@ -108,7 +108,7 @@ Főbb jellemzői:
              
             </Column1>
              <Column2>
-             <Subtitle darkText={true}>
+            {/*  <Subtitle darkText={true}>
              Sík-lemez lézervágó gép
               </Subtitle>
               <VideoContainer>
@@ -137,7 +137,7 @@ Főbb jellemzői:
                <br/>
                <br/>
                
-                </TextWrapper> 
+                </TextWrapper>  */}
             </Column2> 
           
           </InfoRow>
